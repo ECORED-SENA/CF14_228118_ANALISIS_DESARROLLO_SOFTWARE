@@ -141,24 +141,6 @@
 
 
 
-
-
-
-      .row.justify-content-center.mb-5
-          .col-lg-8
-            h5.mb-4 Un ejemplo de configuración de código HTML es:  
-            .tarjeta-codigo.p-5.mb-5
-              pre.language-html(language="html").mt-5
-                code
-      
-
-
-
-
-
-
-
-
 </template>
 
 <script>
