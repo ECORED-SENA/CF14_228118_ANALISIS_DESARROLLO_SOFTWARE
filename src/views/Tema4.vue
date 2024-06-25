@@ -533,13 +533,13 @@
       .col-lg-8.col-7.mb-lg-0.mb-3(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Figura 4. 
-          span Ejemplo llamadas entrantes 2017 
+          span Ejemplo llamadas entrantes 2017
         img(src='@/assets/curso/temas/43.png', alt='La imagen presenta  la aplicación de un ejemplo sobre cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017.')
       .col-lg-5
         p Pero si se desea mostrar también la agrupación por años y meses para los años 2017, 2018 y 2019, la consulta sería: 
         .tarjeta-codigo.p-2.mb-5
             pre.language-html(language="html").mt-5
-              code ​​​SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad 
+              code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad 
 
                 br
                 br
