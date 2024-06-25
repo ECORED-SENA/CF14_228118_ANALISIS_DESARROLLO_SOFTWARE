@@ -5,16 +5,17 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 1
-      h1 HTML 5
+      h1 Interfaz de línea de comandos de MySQL 
+    
+    .row.justify-content-center.mb-5
+      .col-lg-9.mb-lg-0.mb-3(data-aos="fade-right")
+        p.mb-0 Al comenzar a trabajar con un Sistema de Gestión de Bases de Datos (SGBD) como MySQL, existen diversas formas de establecer comunicación con el servidor. Habitualmente, en el software se utiliza una API para realizar consultas y otras operaciones con el servidor. Por ejemplo, en PHP, esta API está integrada directamente en el lenguaje. 
+          br
+          br
+          |En este apartado, se empleará MySQL directamente a través de un cliente que se ejecuta desde una consola (una ventana de comandos en Windows). En secciones posteriores, se explicarán las diferentes APIS disponibles. 
+      .col-lg-3.col-5(data-aos="fade-left"): img(src='@/assets/curso/temas/3.png', alt='')
+    Separador
     .f-1-1.p-5.mn.mb-5
-      .row.justify-content-center.mb-5
-        .col-lg-9.mb-lg-0.mb-3(data-aos="fade-right")
-          p.mb-0 Al comenzar a trabajar con un Sistema de Gestión de Bases de Datos (SGBD) como MySQL, existen diversas formas de establecer comunicación con el servidor. Habitualmente, en el software se utiliza una API para realizar consultas y otras operaciones con el servidor. Por ejemplo, en PHP, esta API está integrada directamente en el lenguaje. 
-            br
-            br
-            |En este apartado, se empleará MySQL directamente a través de un cliente que se ejecuta desde una consola (una ventana de comandos en Windows). En secciones posteriores, se explicarán las diferentes APIS disponibles. 
-        .col-lg-3.col-5(data-aos="fade-left"): img(src='@/assets/curso/temas/3.png', alt='')
-      Separador
       #t_1_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
         h2 1.1 Aplicación cliente de MySQL
       p.mb-5(data-aos='fade-right') Dado que ya se conocen los métodos para ingresar y salir del cliente de MySQL y se dispone de la capacidad para efectuar consultas, resulta sencillo consultar múltiples variables del sistema o evaluar diversas funcionalidades de MySQL. Para llevar a cabo estas consultas, se emplea la sentencia SQL SELECT. Por ejemplo: 

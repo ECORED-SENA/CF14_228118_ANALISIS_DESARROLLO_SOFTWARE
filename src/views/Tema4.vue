@@ -74,76 +74,77 @@
                 td SEC_TO_TIME
                 td Devuelve un valor de tiempo basado en los segundos especificados.
     p.mb-5(data-aos='fade-right') Para este ejemplo, utilizaremos una base de datos de llamadas telefónicas. La estructura de esta base de datos se presentará a continuación, y con ella aprenderemos a realizar consultas.
-    p.fw-bold Ejemplo llamadas telefónicas: 
-    .row.justify-content-center.mb-5
-      .col-lg-8(data-aos="zoom-in")
-        .tarjeta.p-4.mb-3(style="background-color: #f7eefe ") 
-          .row.justify-content-center.align-items-center
-            .col-lg-2.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/27.svg', alt='')
-            .col-lg-10
-              .row.justify-content-center.align-items-center.mb-3
-                .col-lg-2.col-3.mb-lg-0.mb-3
-                  img.d-inline-block(src='@/assets/curso/temas/n1-1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
-                .col-lg-10.col-3.mb-lg-0.mb-3
-                  p.mb-0 Descargue el archivo para crear la base de datos cdr (recuerde que debe descomprimirlo) y de él extraiga el archivo cdr.sql. Este archivo crea una base de datos llamadas cdr y dentro una tabla con el mismo nombre.
-              .row.justify-content-center.align-items-center.mb-3
-                .col-lg-2.col-3.mb-lg-0.mb-3
-                  img.d-inline-block(src='@/assets/curso/temas/n2-1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
-                .col-lg-10.col-3.mb-lg-0.mb-3
-                  p.mb-0 Importe el archivo con la sentencia source&gt;ruta del archivo sq
-        .tarjeta-codigo.p-2.mb-5
-          pre.language-html(language="html").mt-5
-            code MariaDB [prueba]&gt; source D:/Peter/Downloads/cdr.sql;
-        a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
-          .row.justify-content-around.align-items-center
-            .anexo__icono
-              img(src="@/assets/template/icono-zip.svg")
-            .anexo__texto
-              h4 BASE DE DATOS.
-              p Descargue aquí el archivo para crear la base de datos cdr. 
-    p.mb-5(data-aos='fade-right') Conozca los datos de prueba con los que se trabajará. 
-    .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-      h5 Tabla 2. 
-      span Diccionario de datos
-    .tabla-a.color-primario.mb-5
-          table
-            thead
-              tr(style="background-color:#00ffdf ")
-                th Función 
-                th Tipo
-                th Longitud 
-                th Descripción 
-            tbody
-              tr
-                td Registro
-                td DATETIME            
-                td 0            
-                td Fecha y hora de registro de la llamada            
-              tr
-                td Origen
-                td VARCHAR            
-                td 80            
-                td Número de teléfono o extensión del llamante            
-              tr
-                td Destino
-                td VARCHAR            
-                td 80            
-                td Número de teléfono o extensión del llamado o destino            
-              tr
-                td Estado
-                td VARCHAR            
-                td 30           
-                td ANSWERED, BUSY, FAILED, NO ANSWER, que representa lo que sucede finalmente con la llamada.            
-              tr
-                td Duración
-                td INT            
-                td 10            
-                td Lo que dura la llamada incluyendo el tiempo de timbrado           
-              tr
-                td Facturas
-                td INT            
-                td 10           
-                td Lo que dura la llamada desde el momento en que es contestada la llamada
+    .f-2-1.p-5.mn.mb-5
+      p.fw-bold Ejemplo llamadas telefónicas: 
+      .row.justify-content-center.mb-5
+        .col-lg-8(data-aos="zoom-in")
+          .tarjeta.p-4.mb-3(style="background-color: #f7eefe ") 
+            .row.justify-content-center.align-items-center
+              .col-lg-2.col-7.mb-lg-0.mb-3: img(src='@/assets/curso/temas/27.svg', alt='')
+              .col-lg-10
+                .row.justify-content-center.align-items-center.mb-3
+                  .col-lg-2.col-3.mb-lg-0.mb-3
+                    img.d-inline-block(src='@/assets/curso/temas/n1-1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
+                  .col-lg-10.col-3.mb-lg-0.mb-3
+                    p.mb-0 Descargue el archivo para crear la base de datos cdr (recuerde que debe descomprimirlo) y de él extraiga el archivo cdr.sql. Este archivo crea una base de datos llamadas cdr y dentro una tabla con el mismo nombre.
+                .row.justify-content-center.align-items-center.mb-3
+                  .col-lg-2.col-3.mb-lg-0.mb-3
+                    img.d-inline-block(src='@/assets/curso/temas/n2-1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
+                  .col-lg-10.col-3.mb-lg-0.mb-3
+                    p.mb-0 Importe el archivo con la sentencia source&gt;ruta del archivo sq
+          .tarjeta-codigo.p-2.mb-5
+            pre.language-html(language="html").mt-5
+              code MariaDB [prueba]&gt; source D:/Peter/Downloads/cdr.sql;
+          a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+            .row.justify-content-around.align-items-center
+              .anexo__icono
+                img(src="@/assets/template/icono-zip.svg")
+              .anexo__texto
+                h4 BASE DE DATOS.
+                p Descargue aquí el archivo para crear la base de datos cdr. 
+      p.mb-5(data-aos='fade-right') Conozca los datos de prueba con los que se trabajará. 
+      .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+        h5 Tabla 2. 
+        span Diccionario de datos
+      .tabla-a.color-primario.mb-5
+            table
+              thead
+                tr(style="background-color:#00ffdf ")
+                  th Función 
+                  th Tipo
+                  th Longitud 
+                  th Descripción 
+              tbody.bg-white
+                tr
+                  td Registro
+                  td DATETIME            
+                  td 0            
+                  td Fecha y hora de registro de la llamada            
+                tr
+                  td Origen
+                  td VARCHAR            
+                  td 80            
+                  td Número de teléfono o extensión del llamante            
+                tr
+                  td Destino
+                  td VARCHAR            
+                  td 80            
+                  td Número de teléfono o extensión del llamado o destino            
+                tr
+                  td Estado
+                  td VARCHAR            
+                  td 30           
+                  td ANSWERED, BUSY, FAILED, NO ANSWER, que representa lo que sucede finalmente con la llamada.            
+                tr
+                  td Duración
+                  td INT            
+                  td 10            
+                  td Lo que dura la llamada incluyendo el tiempo de timbrado           
+                tr
+                  td Facturas
+                  td INT            
+                  td 10           
+                  td Lo que dura la llamada desde el momento en que es contestada la llamada
     p.mb-5(data-aos='fade-right') A partir de este punto usaremos #[b MySQL WorkBench], para visualizar mejor los resultados.
     .row.justify-content-center.align-items-center.mb-3
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
@@ -222,40 +223,41 @@
                 code.text-white SELECT *, facturar/60 AS minutos, CEIL(facturar/60) AS minutos_redondeado, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/33.png', alt='')
     Separador
-    #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.2 Operadores
-    p.mb-5(data-aos='fade-right') SQL tiene muchos operadores diferentes según el tipo de columna. Esos operadores se emplean para construir expresiones que se usan en las consultas.  
-    .titulo-tres.mb-4: h3.mb-0 A) Operadores lógicos
-    .row.justify-content-center.align-items-center.mb-5
-      .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
-        p Los operadores lógicos, se emplean para crear expresiones lógicas complejas. Permite el uso de álgebra booleana y ayuda a crear condiciones o filtros de información mucho más precisos. 
-          br
-          br
-          |Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: TRUE y FALSE, respectivamente. 
-          br
-          br
-          |En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores NULL. El valor verdadero se implementa como 1 o TRUE, el falso como 0 o FALSE y, el desconocido como NULL. 
-      .col-lg-4.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/34.svg', alt='')
-    p.fw-bold Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos:  
-    .row.justify-content-center.mb-5
-      .col-lg-6 
-        .tarjeta-codigo.p-2.mb-5
-          pre.language-html(language="html").mt-5
-            code MariaDB [prueba]&gt; SELECT TRUE, FALSE, NULL; 
-              br
-              |+———+———+———+ 
-              br
-              || TRUE | FALSE | NULL | 
-              br
-              |+———+———+———+ 
-              br
-              ||    1 |     0 | NULL | 
-              br
-              |+———+———+———+ 
-              br
-              |1 row in set (0.000 sec) 
-              br
-              |MariaDB [prueba]&gt; 
+    .f-2-2.p-5.mn.mb-5
+      #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+        h2 4.2 Operadores
+      p.mb-5(data-aos='fade-right') SQL tiene muchos operadores diferentes según el tipo de columna. Esos operadores se emplean para construir expresiones que se usan en las consultas.  
+      .titulo-tres.mb-4: h3.mb-0 A) Operadores lógicos
+      .row.justify-content-center.align-items-center.mb-5
+        .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
+          p Los operadores lógicos, se emplean para crear expresiones lógicas complejas. Permite el uso de álgebra booleana y ayuda a crear condiciones o filtros de información mucho más precisos. 
+            br
+            br
+            |Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: TRUE y FALSE, respectivamente. 
+            br
+            br
+            |En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores NULL. El valor verdadero se implementa como 1 o TRUE, el falso como 0 o FALSE y, el desconocido como NULL. 
+        .col-lg-4.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/34.svg', alt='')
+      p.fw-bold Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos:  
+      .row.justify-content-center.mb-5
+        .col-lg-6 
+          .tarjeta-codigo.p-2.mb-5
+            pre.language-html(language="html").mt-5
+              code MariaDB [prueba]&gt; SELECT TRUE, FALSE, NULL; 
+                br
+                |+———+———+———+ 
+                br
+                || TRUE | FALSE | NULL | 
+                br
+                |+———+———+———+ 
+                br
+                ||    1 |     0 | NULL | 
+                br
+                |+———+———+———+ 
+                br
+                |1 row in set (0.000 sec) 
+                br
+                |MariaDB [prueba]&gt; 
     .row.justify-content-center.mb-5.g-lg-0
       .col-lg-3
         .p-4(style="background-color: #debefb")
@@ -372,51 +374,53 @@
                 |NULL | 1 OR 0 OR 1 | +————+—————+—————+——————+ | 1 | 1 | 
                 br
                 |NULL | 1 | +————+—————+—————+——————+ 1 row in set (0.000 sec) MariaDB [prueba]&gt;
-    .titulo-tres.mb-4: h3.mb-0 B) Operadores de igualdad 
-    p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado TRUE si son iguales o FALSE si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
-    .tarjeta-codigo.p-2.mb-5
-      pre.language-html(language="html").mt-5
-        code SELECT * FROM cdr  WHERE registro = ‘2018-01-02 10:19:08’ 
-    .titulo-tres.mb-4: h3.mb-0 C) Operadores de desigualdad  
-    p.mb-5(data-aos='fade-right') En SQL, los operadores de desigualdad son utilizados para filtrar resultados en una consulta basada en comparaciones numéricas entre columnas o valores fijos. 
-    .row.justify-content-center.mb-5
-      .col-lg-3.mb-lg-0.mb-3
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Tabla 3.
-          span Operadores de desigualdad
-        .tabla-a.color-primario.mb-5
-            table
-              thead
-                tr(style="background-color:#00ffdf ")
-                  th Operador
-                  th Descripción
-              tbody.bg-white
-                tr
-                  td <=
-                  td Menor o igual
-                tr
-                  td < 
-                  td Menor
-                tr
-                  td >
-                  td Mayor
-                tr
-                  td >= 
-                  td Mayor o igual
-      .col-lg-5
-        .tarjeta-codigo.p-2.mb-5
-            pre.language-html(language="html").mt-5
-              code SELECT * FROM cdr   
-                br
-                |WHERE registro >= ‘2018-01-02 10:19:08’  
-                br
-                |AND registro <= ‘2018-01-04 10:19:08
-    .row.justify-content-center.mb-5
-      .col-lg-8
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 3. 
-          span Operadores de desigualdad 
-        img(src='@/assets/curso/temas/35.png', alt='La figura presenta la aplicación de los operadores de desigualdad.')
+    .f-1-5.p-5.mn.mb-5
+      .titulo-tres.mb-4: h3.mb-0 B) Operadores de igualdad 
+      p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado TRUE si son iguales o FALSE si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
+      .tarjeta-codigo.p-2.mb-5
+        pre.language-html(language="html").mt-5
+          code SELECT * FROM cdr  WHERE registro = ‘2018-01-02 10:19:08’ 
+    .f-1-8.p-5.mn.mb-5
+      .titulo-tres.mb-4: h3.mb-0 C) Operadores de desigualdad  
+      p.mb-5(data-aos='fade-right') En SQL, los operadores de desigualdad son utilizados para filtrar resultados en una consulta basada en comparaciones numéricas entre columnas o valores fijos. 
+      .row.justify-content-center.mb-5
+        .col-lg-3.mb-lg-0.mb-3
+          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+            h5 Tabla 3.
+            span Operadores de desigualdad
+          .tabla-a.color-primario.mb-5
+              table
+                thead
+                  tr(style="background-color:#00ffdf ")
+                    th Operador
+                    th Descripción
+                tbody.bg-white
+                  tr
+                    td <=
+                    td Menor o igual
+                  tr
+                    td < 
+                    td Menor
+                  tr
+                    td >
+                    td Mayor
+                  tr
+                    td >= 
+                    td Mayor o igual
+        .col-lg-5
+          .tarjeta-codigo.p-2.mb-5
+              pre.language-html(language="html").mt-5
+                code SELECT * FROM cdr   
+                  br
+                  |WHERE registro >= ‘2018-01-02 10:19:08’  
+                  br
+                  |AND registro <= ‘2018-01-04 10:19:08
+      .row.justify-content-center.mb-5
+        .col-lg-8
+          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+            h5 Figura 3. 
+            span Operadores de desigualdad 
+          img(src='@/assets/curso/temas/35.png', alt='La figura presenta la aplicación de los operadores de desigualdad.')
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.3 Ordenar resultados 
@@ -511,51 +515,52 @@
                 |LIMIT 10, 10
         .col-lg-7.col-6: img(src='@/assets/curso/temas/42.png', alt='')
     Separador
-    #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-      h2 4.5 Agrupar filas
-    p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[b SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[b GROUP BY]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
-    .row.justify-content-center.mb-5
-      .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
-        .tarjeta.p-4(style="background-color:  #e3dfeb")
-          h5 Ejemplo: 
-          p.mb-0 Supongamos que deseamos saber cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017. Se consideran llamadas entrantes aquellas que no provienen de una extensión local, identificadas porque el origen tiene más de tres dígitos. 
-      .col-lg-5
-        .tarjeta-codigo.p-2.mb-5
-            pre.language-html(language="html").mt-5
-              code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad 
-                br
-                |FROM cdr  
-                br
-                |WHERE LENGTH(origen) > 3 AND YEAR(registro) = 2017 
-                br
-                |GROUP BY mes 
-    .row.justify-content-center.mb-5
-      .col-lg-8.col-7.mb-lg-0.mb-3(data-aos="fade-right")
-        .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-          h5 Figura 4. 
-          span Ejemplo llamadas entrantes 2017
-        img(src='@/assets/curso/temas/43.png', alt='La imagen presenta  la aplicación de un ejemplo sobre cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017.')
-      .col-lg-5
-        p Pero si se desea mostrar también la agrupación por años y meses para los años 2017, 2018 y 2019, la consulta sería: 
-        .tarjeta-codigo.p-2.mb-5
-            pre.language-html(language="html").mt-5
-              code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad 
+    .f-2-3.p-5.mn.mb-5
+      #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
+        h2 4.5 Agrupar filas
+      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[b SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[b GROUP BY]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
+      .row.justify-content-center.mb-5
+        .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
+          .tarjeta.p-4(style="background-color:  #e3dfeb")
+            h5 Ejemplo: 
+            p.mb-0 Supongamos que deseamos saber cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017. Se consideran llamadas entrantes aquellas que no provienen de una extensión local, identificadas porque el origen tiene más de tres dígitos. 
+        .col-lg-5
+          .tarjeta-codigo.p-2.mb-5
+              pre.language-html(language="html").mt-5
+                code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad 
+                  br
+                  |FROM cdr  
+                  br
+                  |WHERE LENGTH(origen) > 3 AND YEAR(registro) = 2017 
+                  br
+                  |GROUP BY mes 
+      .row.justify-content-center.mb-5
+        .col-lg-8.col-7.mb-lg-0.mb-3(data-aos="fade-right")
+          .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+            h5 Figura 4. 
+            span Ejemplo llamadas entrantes 2017
+          img(src='@/assets/curso/temas/43.png', alt='La imagen presenta  la aplicación de un ejemplo sobre cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017.')
+        .col-lg-5
+          p Pero si se desea mostrar también la agrupación por años y meses para los años 2017, 2018 y 2019, la consulta sería: 
+          .tarjeta-codigo.p-2.mb-5
+              pre.language-html(language="html").mt-5
+                code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad 
 
-                br
-                br
-                |FROM cdr  
-                br
-                |WHERE LENGTH(origen) > 3 AND YEAR(registro) IN (2017,2018,2019) 
-                br
-                |GROUP BY año, mes 
-                br
-                |ORDER BY año, mes 
-    p.mb-5(data-aos='fade-right') Es importante destacar que para incluir varios años en la consulta, se utilizó la cláusula IN. Además, los resultados se ordenan primero por año y, como segundo criterio, por mes.
-    .titulo-sexto.color-acento-contenido(data-aos='fade-right')
-      h5 Figura 5. 
-      span Usó de cláusula IN
-    .row.justify-content-center.mb-5
-      .col-lg-8(data-aos="zoom-in"): img(src='@/assets/curso/temas/44.png', alt='La imagen indica que se usó la cláusula IN y se ordenó por año y como segundo criterio por mes.')
+                  br
+                  br
+                  |FROM cdr  
+                  br
+                  |WHERE LENGTH(origen) > 3 AND YEAR(registro) IN (2017,2018,2019) 
+                  br
+                  |GROUP BY año, mes 
+                  br
+                  |ORDER BY año, mes 
+      p.mb-5(data-aos='fade-right') Es importante destacar que para incluir varios años en la consulta, se utilizó la cláusula IN. Además, los resultados se ordenan primero por año y, como segundo criterio, por mes.
+      .titulo-sexto.color-acento-contenido(data-aos='fade-right')
+        h5 Figura 5. 
+        span Usó de cláusula IN
+      .row.justify-content-center.mb-5
+        .col-lg-8(data-aos="zoom-in"): img(src='@/assets/curso/temas/44.png', alt='La imagen indica que se usó la cláusula IN y se ordenó por año y como segundo criterio por mes.')
 
 
 

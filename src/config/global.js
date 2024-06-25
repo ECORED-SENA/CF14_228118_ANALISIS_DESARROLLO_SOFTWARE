@@ -37,38 +37,23 @@ export default {
       {
         nombreRuta: 'tema1',
         numero: '1',
-        titulo: 'HTML 5',
+        titulo: 'Interfaz de línea de comandos de MySQL ',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '1.1',
-            titulo: 'Etiquetas <em>(tags)</em>',
+            titulo: 'Aplicación cliente de MySQL',
             hash: 't_1_1',
           },
           {
             numero: '1.2',
-            titulo: 'Textos',
+            titulo: 'Prueba de consultas básicas ',
             hash: 't_1_2',
           },
           {
             numero: '1.3',
-            titulo: 'Imágenes',
+            titulo: 'SQL – Standard Query Language',
             hash: 't_1_3',
-          },
-          {
-            numero: '1.4',
-            titulo: 'Hiperenlaces',
-            hash: 't_1_4',
-          },
-          {
-            numero: '1.5',
-            titulo: 'Tablas',
-            hash: 't_1_5',
-          },
-          {
-            numero: '1.6',
-            titulo: 'Formularios',
-            hash: 't_1_6',
           },
         ],
       },
@@ -76,65 +61,94 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'Hojas de estilo',
+        titulo: 'SQL para la creación y eliminación de bases de datos – DDL',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '2.1',
-            titulo: 'Introducción CSS3',
+            titulo: 'Claves foráneas',
             hash: 't_2_1',
           },
           {
             numero: '2.2',
-            titulo: 'Estructura',
+            titulo: 'Mostrar y eliminar tablas y bases de datos',
             hash: 't_2_2',
-          },
-          {
-            numero: '2.3',
-            titulo: 'Formulario CSS3',
-            hash: 't_2_3',
           },
         ],
       },
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'JavaScript',
+        titulo: 'SQL para la creación y eliminación de bases de datos – DDL ',
         desarrolloContenidos: true,
         subMenu: [
           {
             numero: '3.1',
-            titulo: 'Versiones',
+            titulo: ' Inserción de registros ',
             hash: 't_3_1',
           },
           {
             numero: '3.2',
-            titulo: 'Sintaxis',
+            titulo: 'Edición de registros',
             hash: 't_3_2',
           },
           {
             numero: '3.3',
-            titulo: 'Tipos de datos',
+            titulo: 'Borrado de registros',
             hash: 't_3_3',
-          },
-          {
-            numero: '3.4',
-            titulo: 'Estructuras de control',
-            hash: 't_3_4',
           },
         ],
       },
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'Gestores de contenido CMS',
+        titulo: 'SQL para consulta de datos – DML',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '4.1',
+            titulo: 'Funciones en MySQL',
+            hash: 't_4_1',
+          },
+          {
+            numero: '4.2',
+            titulo: 'Operadores',
+            hash: 't_4_2',
+          },
+          {
+            numero: '4.3',
+            titulo: 'Ordenar resultados',
+            hash: 't_4_3',
+          },
+          {
+            numero: '4.4',
+            titulo: 'Listar y limitar resultados',
+            hash: 't_4_4',
+          },
+          {
+            numero: '4.5',
+            titulo: 'Agrupar filas',
+            hash: 't_4_5',
+          },
+        ],
       },
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Gestores de contenido CMS',
+        titulo: 'Consulta multitablas – DML',
         desarrolloContenidos: true,
+        subMenu: [
+          {
+            numero: '5.1',
+            titulo: 'Combinación interna (INNER JOIN)',
+            hash: 't_5_1',
+          },
+          {
+            numero: '5.2',
+            titulo: 'Combinación externa',
+            hash: 't_5_2',
+          },
+        ],
       },
     ],
     subMenu: [
