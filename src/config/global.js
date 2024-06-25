@@ -130,6 +130,12 @@ export default {
         titulo: 'Gestores de contenido CMS',
         desarrolloContenidos: true,
       },
+      {
+        nombreRuta: 'tema5',
+        numero: '5',
+        titulo: 'Gestores de contenido CMS',
+        desarrolloContenidos: true,
+      },
     ],
     subMenu: [
       {
