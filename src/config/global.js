@@ -198,17 +198,40 @@ export default {
   },
   complementario: [
     {
-      tema: 'HTML 5',
-      referencia:
-        'HTMLed.it. (2021). Editor HTML gratuito en línea, limpiador y convertidor.',
-      tipo: 'Página web',
-      link: 'https://htmled.it/or/',
+      tema: 'Funciones en MySQL',
+      referencia: 'Shakmuria. (2023, abril 5). Introducción al SQL: Comandos básicos y ejemplos prácticos [Archivo de video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=SNjTk5GjbTw&ab_channel=Shakmuria',
     },
     {
-      tema: 'JavaScript',
-      referencia: 'Cubic Factory. (2021). Ejecutar JavaScript.',
+      tema: 'Consulta multitablas – DML',
+      referencia: 'Códigos de Programación - MR. (2023, abril 10). Aprende SQL en 20 minutos [Archivo de video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=E9m_ii37pNY&ab_channel=C%C3%B3digosdeProgramaci%C3%B3n-MR',
+    },
+    {
+      tema: 'Combinación interna (INNER JOIN)',
+      referencia: 'TodoCode. (2023, marzo 15). Tutorial Completo de SQL para Principiantes [Archivo de video]. YouTube.',
+      tipo: 'Video',
+      link: 'https://www.youtube.com/watch?v=0BstRqp6Svg&ab_channel=TodoCode',
+    },
+    {
+      tema: 'MySQL',
+      referencia: 'MySQL 8.0 Reference Manual. (2021). 3.3.2 #[em Creating a Table]. MySQL.',
       tipo: 'Página web',
-      link: 'https://www.cubicfactory.com/jseditor/',
+      link: 'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
+    },
+    {
+      tema: 'MySQL',
+      referencia: 'MySQLTutorial. (2020). MySQL #[em AND Operator.] MySQL.',
+      tipo: 'Página web',
+      link: 'https://www.mysqltutorial.org/mysql-and',
+    },
+    {
+      tema: 'MySQL',
+      referencia: 'MySQLTutorial. (2020). MySQL OR Operator. MySQL.',
+      tipo: 'Página web',
+      link: 'https://www.mysqltutorial.org/mysql-or',
     },
   ],
   glosario: [
