@@ -213,108 +213,81 @@ export default {
   ],
   glosario: [
     {
-      termino: 'CMS',
-      significado: 'Sistema de gestión de contenidos.',
+      termino: 'SQL',
+      significado: 'Lenguaje de Consulta Estructurada (#[em Structured Query Language]), utilizado para gestionar y manipular bases de datos relacionales.',
     },
     {
-      termino: 'CSS3',
-      significado: 'Hojas de estilo en cascada, versión 3.',
+      termino: 'SGBD',
+      significado: 'Sistema de Gestión de Bases de Datos. #[em Software] que permite la creación, modificación y administración de una base de datos',
     },
     {
-      termino: 'ES6',
-      significado: 'Abreviación de ECMAScript, versión 6.',
+      termino: 'DDL',
+      significado: 'Lenguaje de Definición de Datos (#[em Data Definition Language]). Subconjunto de comandos en SQL usados para definir la estructura de la base de datos. Incluye comandos como #[em CREATE y DROP.]',
     },
     {
-      termino: '<em>Frontend</em>',
-      significado: 'Capa de presentación de una aplicación web.',
+      termino: 'DML',
+      significado: 'Lenguaje de Manipulación de Datos (#[em Data Manipulation Language]). Subconjunto de comandos en SQL usados para el manejo de datos, incluyendo #[em SELECT, INSERT, UPDATE y DELETE.]',
     },
     {
-      termino: '<em>Get</em>',
-      significado: 'Método de envío de datos por URL web.',
+      termino: 'Clave primaria',
+      significado: 'Atributo o conjunto de atributos que identifica de manera única cada fila en una tabla.',
     },
     {
-      termino: 'JavaScript',
-      significado: 'Lenguaje de programación.',
+      termino: 'Índice',
+      significado: 'Estructura de datos que mejora la velocidad de las operaciones de la base de datos.',
     },
     {
-      termino: 'LAN',
-      significado: 'Red de área local.',
+      termino: 'JOIN',
+      significado: 'Operación en SQL que permite combinar filas de dos o más tablas basadas en una relación común entre ellas.',
     },
     {
-      termino: '<em>Landing Page</em>',
-      significado:
-        'Página web de aterrizaje, diseñada específicamente para una campaña de marketing o publicidad.',
+      termino: '<em>FOREIGN KEY</em>',
+      significado: 'Clave foránea, un campo en una tabla que es clave primaria en otra, utilizada para establecer y hacer cumplir un vínculo entre los datos en dos tablas.',
     },
     {
-      termino: 'LESS',
-      significado:
-        'Hoja de estilo dinámica, extensión que amplía las capacidades de CSS.',
+      termino: 'Normalización',
+      significado: 'proceso de organización de campos y tablas de una base de datos para minimizar la redundancia y la dependencia.',
     },
     {
-      termino: 'MAN',
-      significado: 'Red de área metropolitana.',
-    },
-    {
-      termino: 'NODE.js',
-      significado:
-        'Entorno de ejecución para JavaScript del lado del servidor.',
-    },
-    {
-      termino: '<em>Plugin</em>',
-      significado:
-        'Aplicación que extiende las funcionalidades de un programa principal.',
-    },
-    {
-      termino: 'Post',
-      significado: 'Método de envío de datos por formulario web.',
-    },
-    {
-      termino: 'SEO',
-      significado:
-        'Optimización para motores de búsqueda, estrategias para mejorar la visibilidad de un sitio web.',
-    },
-    {
-      termino: 'WAN',
-      significado: 'Red de área extensa o mundial.',
+      termino: 'CRUD',
+      significado:'Acrónimo de Crear, Leer, Actualizar y Eliminar (#[em Create, Read, Update, Delete]). Representa las operaciones básicas en una base de datos.',
     },
   ],
   referencias: [
     {
-      referencia:
-        'Acibeiro. M. (2021). Qué es un gestor de contenidos y cuál es el mejor para crear una web.',
-      link: 'https://www.lucushost.com/blog/gestor-de-contenidos/',
+      referencia:'Asale y Rae. (2021). Base. Diccionario de la lengua española.',
+      link:'https://dle.rae.es/base#CiiosqO',
     },
     {
-      referencia: 'Beati, H. (2016). HTML5 y CSS3.',
+      referencia:'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
     },
     {
-      referencia: 'Cuervo, P. V. (2019). 10 características de un CMS.',
-      link: 'https://www.arquitectoit.com/cms/10-caracteristicas-cms/',
+      referencia:'Kyocera. (2021). Conceptos sobre base de datos orientada a objetos. KYOCERA Document Solutions España.',
+      link:'https://www.kyoceradocumentsolutions.es/es/smarter-workspaces/business-challenges/paperless/conceptos-sobre-base-de-datos-orientada-a-objetos.html',
     },
     {
-      referencia:
-        'Gutierrez, R. (2018). Understanding the role of digital commons in the web; The making of HTML5.',
+      referencia:'López, J. (2009). Algoritmos y programación (guía para docentes).',
+      link:'http://www.eduteka.org/GuiaAlgoritmos.php',
     },
     {
-      referencia:
-        'Hverbeke, M. (2018). Eloquent JavaScript: A Modern Introduction to Programming.',
+      referencia:'Microsoft. (2021). Descripción de los conceptos básicos de normalización de la base de datos.',
+      link: 'https://docs.microsoft.com/es-es/office/troubleshoot/access/database-normalization-description',   
     },
     {
-      referencia:
-        'Lenguaje JS. (2021). ¿Qué son los bucles? Bucles, iteraciones y repetición de código.',
-      link: 'https://lenguajejs.com/javascript/introduccion/bucles/',
+      referencia:'MySQL 8.0 Reference Manual. (2021).13.1.20.5 FOREIGN KEY Constraints. MySQL.',
+      link:'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
     },
     {
-      referencia:
-        'Mooc, Aprendizaje Online.(2015). Clasificación de los sistemas de gestión de contenidos.',
-      link:
-        'https://mooccontenidosweb.wordpress.com/2015/05/01/clasificacion-de-los-sistemas-de-gestion-de-contenidos/',
+      referencia:'MySQLTutorial. (2020). MySQL AND Operator. MySQL.',
+      link:'https://www.mysqltutorial.org/mysql-and',
     },
     {
-      referencia:
-        'Mora, S. L. (2021). HTML5 y CSS3: <6> HTML5 – Formularios</6>.',
-      link:
-        'http://desarrolloweb.dlsi.ua.es/cursos/2011/html5-css3-es/html5-formularios',
+      referencia:'MySQLTutorial. (2020). MySQL OR Operator. MySQL.',
+      link:'https://www.mysqltutorial.org/mysql-or',
+    },
+    {
+      referencia:'Navarro, J., y Lafuente, M. (2010). Ilustración de moda: dibujo plano. Sistema de Bibliotecas SENA.',
+      link:'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/q6j6k0/sena_aleph000023241',
     },
   ],
   creditos: [
@@ -337,10 +310,14 @@ export default {
       titulo: 'CONTENIDO INSTRUCCIONAL',
       autores: [
         {
-          nombre: 'Carlos Hernán Muñoz Carvajal',
+          nombre: 'Henry Eduardo Bastidas Paruma',
           cargo: 'Experto Temático',
-          centro:
-            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+          centro: 'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+        },
+        {
+          nombre: 'Peter Emerson Pinchao Solis',
+          cargo: 'Experto Temático',
+          centro: 'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
         {
           nombre: 'Paola Alexandra Moya',
