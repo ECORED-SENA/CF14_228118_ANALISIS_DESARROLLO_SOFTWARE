@@ -101,7 +101,7 @@
                 p.text-white Toda sentencia debe finalizar con punto y coma (;), luego debe dar enter. 
       Separador
       #t_1_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
-        h2 1.3  SQL – Standard Query Language
+        h2 1.3  SQL – #[em Standard Query Language]
       p.mb-5(data-aos='fade-right') En nivel teórico, hay dos lenguajes para el uso de bases de datos: 
       .row.justify-content-center.mb-5
         .col-lg-4.mb-lg-0.mb-3(data-aos="fade-right")
@@ -117,7 +117,7 @@
       p.mb-5(data-aos='fade-right') #[b SQL] abarca ambos lenguajes #[b DDL]+DML y serán estudiados en esta unidad, ya que ambos hacen parte del conjunto de sentencias de #[b SQL.] 
         br
         br
-        |En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. Ya no se empleará (por ahora), #[b MySQL Workbench], y se CONOC     
+        |En este punto se explicará el proceso para convertir del modelo lógico relacional, al modelo físico, empleando sentencias SQL. Ya no se empleará (por ahora), #[b MySQL #[em Workbench]], y se CONOC     
 
 
 

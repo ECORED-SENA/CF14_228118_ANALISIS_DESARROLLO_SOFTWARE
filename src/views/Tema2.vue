@@ -31,7 +31,7 @@
 				LineaTiempoC.color-primario()
 					.row.justify-content-center(titulo="Paso 1")
 						.col-lg-6.mb-4.mb-lg-0
-							p Se usa la sentencia #[b CREATE DATABASE], para crear una base de datos. 
+							p Se usa la sentencia #[b #[em CREATE DATABASE]], para crear una base de datos. 
 						.col-lg-4
 							.tarjeta-codigo.p-5.mb-5
 								pre.language-html(language="html").mt-5
@@ -42,7 +42,7 @@
 										|mysql> 
 					.row.justify-content-center(titulo="Paso 2")
 						.col-lg-6.mb-4.mb-lg-0
-							p Se puede saber cuántas bases de datos se encuentran en nuestro sistema usando la sentencia #[b SHOW DATABASES.] 
+							p Se puede saber cuántas bases de datos se encuentran en nuestro sistema usando la sentencia #[b #[em SHOW DATABASES.]] 
 						.col-lg-5
 							.tarjeta-codigo.p-5.mb-5
 								pre.language-html(language="html").mt-5
@@ -127,11 +127,11 @@
 		.row.justify-content-center.mb-5
 			.col-lg-4.mb-lg-0.mb-3
 				.tarjeta.p-4.h-100(style="background-color:#d6e1fd ")
-					p.mb-0 A continuación, se presenta la sentencia #[b CREATE TABLE], que se utiliza para la creación de tablas. Esta sentencia posee una sintaxis algo compleja debido a la variedad de opciones disponibles para configurar una tabla. Se explorarán estas opciones gradualmente, y en breve se dominarán muchas de ellas. 
+					p.mb-0 A continuación, se presenta la sentencia #[b #[em CREATE TABLE]], que se utiliza para la creación de tablas. Esta sentencia posee una sintaxis algo compleja debido a la variedad de opciones disponibles para configurar una tabla. Se explorarán estas opciones gradualmente, y en breve se dominarán muchas de ellas. 
 			.col-lg-4.mb-lg-0.mb-3: img(src='@/assets/curso/temas/11.svg', alt='')
 			.col-lg-4.mb-lg-0.mb-3
 				.tarjeta.p-4.h-100(style="background-color:#ffefaf ")
-					p.mb-0 En su forma más sencilla, la sentencia #[b CREATE TABLE] permite crear una tabla especificando todas las columnas requeridas. A continuación, se muestra un ejemplo de una tabla diseñada para almacenar el nombre de varias personas y sus respectivas fechas de nacimiento. Es necesario indicar el nombre de la tabla, así como los nombres y tipos de datos de cada columna:  
+					p.mb-0 En su forma más sencilla, la sentencia #[b #[em CREATE TABLE]] permite crear una tabla especificando todas las columnas requeridas. A continuación, se muestra un ejemplo de una tabla diseñada para almacenar el nombre de varias personas y sus respectivas fechas de nacimiento. Es necesario indicar el nombre de la tabla, así como los nombres y tipos de datos de cada columna:  
 		p.mb-5(data-aos='fade-right') Se creará una tabla denominada 'gente' con dos columnas: 'nombre', que acepta cadenas de hasta 40 caracteres, y 'fecha', de tipo fecha. 
 		.row.justify-content-center.mb-5
 			.col-lg-5.mb-lg-0.mb-3(data-aos="fade-right")
@@ -150,7 +150,7 @@
 							br
 							|mysql> 
 			.col-lg-7(data-aos="fade-left")
-				p.mb-5(data-aos='fade-right') Se puede examinar cuántas tablas y qué nombres tienen en una base de datos, empleando la sentencia #[b SHOW TABLES:] 
+				p.mb-5(data-aos='fade-right') Se puede examinar cuántas tablas y qué nombres tienen en una base de datos, empleando la sentencia #[b #[em SHOW TABLES:]] 
 				.tarjeta-codigo.p-2.mb-5
 					pre.language-html(language="html").mt-5
 						code mysql> SHOW TABLES; 
@@ -176,8 +176,8 @@
 					.tarjeta.p-5(style="background-color: #e3dfeb ")
 						.row.justify-content-center.align-items-center
 							.col-lg-2.col-3.mb-lg-0.mb-3: img(src='@/assets/curso/temas/12.svg', alt='')
-							.col-lg-10: p.mb-0 Cuando se define una columna como clave primaria, automáticamente se impide que contenga valores NULL (nulo). Sin embargo, no solo en este caso puede ser relevante restringir la asignación de valores nulos en una columna.
-			p.mb-5(data-aos='fade-right') Por defecto, las columnas admiten valores nulos (NULL). Para que no se permitan, se utiliza la restricción NOT NULL. Por ejemplo:  
+							.col-lg-10: p.mb-0 Cuando se define una columna como clave primaria, automáticamente se impide que contenga valores #[em NULL] (nulo). Sin embargo, no solo en este caso puede ser relevante restringir la asignación de valores nulos en una columna.
+			p.mb-5(data-aos='fade-right') Por defecto, las columnas admiten valores nulos #[em (NULL).] Para que no se permitan, se utiliza la restricción #[em NOT NULL.] Por ejemplo:  
 			.row.justify-content-center.mb-5
 				.col-lg-6
 					.tarjeta-codigo.p-2.mb-5
@@ -212,7 +212,7 @@
 			.titulo-tres.mb-4: h3.mb-0 B. Valores por defecto 
 			.row.justify-content-center.mb-5
 				.col-lg-5.mb-lg-0.mb-3(data-aos="fade-right")
-					p En una columna, se puede especificar opcionalmente un valor por defecto. Este valor por defecto se asignará automáticamente a la columna cuando no se especifique un valor concreto al añadir un registro. Si una columna permite valores nulos y no se especifica un valor al insertar, el valor por defecto será NULL. Por ejemplo, en el caso mencionado anteriormente, el valor por defecto para la columna "poblacion" es NULL.
+					p En una columna, se puede especificar opcionalmente un valor por defecto. Este valor por defecto se asignará automáticamente a la columna cuando no se especifique un valor concreto al añadir un registro. Si una columna permite valores nulos y no se especifica un valor al insertar, el valor por defecto será #[em NULL]. Por ejemplo, en el caso mencionado anteriormente, el valor por defecto para la columna "poblacion" es #[em NULL.]
 					img(src='@/assets/curso/temas/13.svg', alt='' style="width: 85px")
 				.col-lg-7(data-aos="fade-left")  
 					.tarjeta.p-4.mb-3(style="background-color: #e3dfeb")
@@ -227,7 +227,7 @@
 				.col-lg-4.mb-lg-0.mb-3
 					.tarjeta.p-4.h-100(style="background-color: #d6e1fd ").d-flex.align-items-center
 						img.d-inline-block(src='@/assets/curso/temas/n1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
-						p.mb-0 Primero se escribirá CREATE TABLE ciudad2 (nombre VARCHAR(20) NOT NULL.
+						p.mb-0 Primero se escribirá #[em CREATE TABLE] ciudad2 (nombre VARCHAR(20) #[em NOT NULL.]
 				.col-lg-4.mb-lg-0.mb-3
 					.tarjeta.p-4.h-100(style="background-color: #d6e1fd ").d-flex.align-items-center
 						img.d-inline-block(src='@/assets/curso/temas/n2.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
@@ -241,12 +241,12 @@
 				.col-lg-8
 					.tarjeta-codigo.p-2.mb-5
 						pre.language-html(language="html").mt-5
-							code mysql> CREATE TABLE ciudad3 (nombre VARCHAR(20) NOT NULL PRIMARY KEY, poblacion INT NULL DEFAULT 50000); 
+							code mysql> #[em CREATE TABLE] ciudad3 (nombre VARCHAR(20) #[em NOT NULL PRIMARY KEY,] poblacion #[em INT NULL DEFAULT] 50000); 
 		.f-1-3.p-5.mn.mb-5
 			.titulo-tres.mb-4: h3.mb-0 C. Claves primarias
 			.row.justify-content-center.mb-5
 				.col-lg-5.mb-lg-0.mb-3(data-aos="fade-right")
-					p Es posible definir una clave primaria para una columna utilizando la palabra clave #[b PRIMARY KEY]. Cada tabla puede tener solo una clave primaria, y la columna designada como tal no puede contener valores NULL, como se mencionó anteriormente. Si esto no se especifica explícitamente, MySQL lo gestionará automáticamente. 
+					p Es posible definir una clave primaria para una columna utilizando la palabra clave #[b #[em PRIMARY KEY]]. Cada tabla puede tener solo una clave primaria, y la columna designada como tal no puede contener valores #[em NULL], como se mencionó anteriormente. Si esto no se especifica explícitamente, MySQL lo gestionará automáticamente. 
 					img(src='@/assets/curso/temas/13.svg', alt='' style="width: 85px")
 				.col-lg-7(data-aos="fade-left")  
 					.tarjeta.p-4.mb-3(style="background-color: #e3dfeb")
@@ -265,7 +265,7 @@
 								.col-lg-10
 									h5.mb-3: span.titulo-azul.p-2 ¡ Nota ! 
 									p(data-aos='fade-right') En la terminología SQL estándar, el término KEY se utiliza generalmente en la definición de índices y PRIMARY KEY para claves primarias específicas 
-			p.mb-5(data-aos='fade-right') El uso de #[b NOT NULL PRIMARY KEY] equivale a #[b PRIMARY KEY] en cuanto a la restricción de valores nulos y la definición de la clave primaria. Es importante destacar que #[b PRIMARY KEY] implica automáticamente #[b NOT NULL]. Por lo tanto, #[b PRIMARY KEY, NOT NULL] o simplemente KEY pueden parecer equivalentes en términos generales, pero en la práctica, #[b KEY] se utiliza más comúnmente para definir índices que no necesariamente son claves primarias. 
+			p.mb-5(data-aos='fade-right') El uso de #[b #[em NOT NULL PRIMARY KEY]] equivale a #[b PRIMARY KEY] en cuanto a la restricción de valores nulos y la definición de la clave primaria. Es importante destacar que #[b #[em PRIMARY KEY]] implica automáticamente #[b #[em NOT NULL]]. Por lo tanto, #[b #[em PRIMARY KEY, NOT NULL]] o simplemente #[em KEY] pueden parecer equivalentes en términos generales, pero en la práctica, #[b #[em KEY]] se utiliza más comúnmente para definir índices que no necesariamente son claves primarias. 
 			.row.justify-content-center.mb-5
 				.col-lg-10
 					.tarjeta.color-primario.p-5.mb-5
@@ -340,7 +340,7 @@
 			.titulo-tres.mb-4: h3.mb-0 G. Documentación
 			.row.justify-content-center.mb-5
 				.col-lg-9.mb-lg-0.mb-3(data-aos="fade-right")
-					p SQL ofrece diversas opciones al momento de definir columnas. Además de especificar el tipo y el nombre, es posible determinar valores por defecto, permitir o prohibir valores tipo NULL, crear claves primarias, indexar, entre otras funciones. La sintaxis para definir las columnas es: 
+					p SQL ofrece diversas opciones al momento de definir columnas. Además de especificar el tipo y el nombre, es posible determinar valores por defecto, permitir o prohibir valores tipo #[em NULL], crear claves primarias, indexar, entre otras funciones. La sintaxis para definir las columnas es: 
 				.col-lg-3.col-5(data-aos="fade-left"): img(src='@/assets/curso/temas/14.svg', alt='')
 			.row.justify-content-center.mb-5
 				.col-lg-8 
@@ -375,8 +375,8 @@
 						h5.mb-0 DATE NOT NULL:
 				.col-lg-4
 					.p-3.h-100(style="background-color: #dee4f0 ")
-						p.mb-0 Si se quiere definir un campo que se llame fecha de tipo DATE y que no sea nulable.
-			p.mb-5(data-aos='fade-right') Si quiere que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis DEFAULT CURRENT_DATE así: 
+						p.mb-0 Si se quiere definir un campo que se llame fecha de tipo #[em DATE] y que no sea nulable.
+			p.mb-5(data-aos='fade-right') Si quiere que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis #[em DEFAULT CURRENT_DATE] así: 
 			.row.justify-content-center.mb-5
 				.col-lg-8 
 					.tarjeta-codigo.p-2.mb-5
@@ -424,7 +424,7 @@
 								|Query OK, 0 rows affected (0.09 sec) 
 								br
 								|mysql> 
-			p.mb-5(data-aos='fade-right') Una vez definida la tabla, es importante prestar especial atención a la columna de salida llamada 'Key':
+			p.mb-5(data-aos='fade-right') Una vez definida la tabla, es importante prestar especial atención a la columna de salida llamada #[em 'Key']:
 			.row.justify-content-center.mb-5
 				.col-lg-8 
 					.tarjeta-codigo.p-2.mb-5
@@ -465,9 +465,9 @@
 							p.text-white Esto ayuda a mejorar el rendimiento de las operaciones de consulta y actualización que involucran la llave foránea.
 					.col-lg-3.mb-lg-0.mb-3
 						.tarjeta.p-4.h-100(style="background-color: #3a1d71 ")
-							h5(style="color:#00FFDF") Cuando se anticipa que se realizarán consultas directas 
+							h5(style="color:#00FFDF") Cuando se anticipa que se realizarán consultas directas: 
 							p.text-white Crear índices en columnas frecuentemente consultadas puede significativamente acelerar el tiempo de respuesta en las búsquedas.
-			p.mb-5(data-aos='fade-right') El segundo tipo de índice permite definir índices sobre una columna específica. Para establecer estos índices, se pueden utilizar indistintamente las opciones KEY o INDEX: 
+			p.mb-5(data-aos='fade-right') El segundo tipo de índice permite definir índices sobre una columna específica. Para establecer estos índices, se pueden utilizar indistintamente las opciones #[em KEY o INDEX]: 
 			.row.justify-content-center.mb-5
 				.col-lg-6.mb-lg-0.mb-3
 					.tarjeta-codigo.p-2.mb-5
@@ -495,10 +495,10 @@
 								|Query OK, 0 rows affected (0.16 sec) 
 		.f-1-5.p-5.mn.mb-5
 			.titulo-tres.mb-4: h3.mb-0 J. Claves únicas
-			p.mb-5(data-aos='fade-right') El tercer tipo de índices se utiliza para crear claves únicas, ya sea sobre una columna o varias. Para definir índices con claves únicas, se debe usar la opción UNIQUE. 
+			p.mb-5(data-aos='fade-right') El tercer tipo de índices se utiliza para crear claves únicas, ya sea sobre una columna o varias. Para definir índices con claves únicas, se debe usar la opción #[em UNIQUE]. 
 				br
 				br
-				|La diferencia entre un índice único y un índice normal es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor NULL, que sí puede repetirse varias veces. 
+				|La diferencia entre un índice único y un índice normal es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor #[em NULL], que sí puede repetirse varias veces. 
 			.row.justify-content-center.mb-5
 				.col-lg-4.mb-lg-0.mb-3
 					.tarjeta-codigo.p-2.mb-5
@@ -525,7 +525,7 @@
 				.titulo-sexto.color-acento-contenido(data-aos='fade-right')
 					h5 Figura 1. 
 					span Claves foráneas
-				img(src='@/assets/curso/temas/16.png', alt='')
+				img(src='@/assets/curso/temas/16.png', alt='La imagen presenta  dos tablas de bases de datos, personas y telefonos.')
 		p.mb-5(data-aos='fade-right') Primero se crea la tabla "persona": 
 		.row.justify-content-center.mb-5
 			.col-lg-6 
@@ -547,7 +547,7 @@
 					pre.language-html(language="html").mt-5
 						code CREATE TABLE telefonos ( 
 							br
-							|pokemon_id INT NOT NULL REFERENCES pokemons (id) ON DELETE CASCADE ON UPDATE CASCADE, 
+							|pokemon_id INT NOT NULL REFERENCES pokemons (id) ON DELETE #[em CASCADE ON UPDATE CASCADE,] 
 							br
 							|numero VARCHAR(20) PRIMARY KEY, 
 							br
@@ -622,11 +622,11 @@
 							|  ON DELETE CASCADE ON UPDATE CASCADE 
 							br
 							|) ENGINE=InnoDB;
-		p.mb-5(data-aos='fade-right') Es necesario que la columna que tiene una definición de clave foránea esté indexada mediante KEY(numero). Sin embargo, esto no debe generar preocupación, ya que si no se especifica explícitamente, MySQL realizará la indexación de manera implícita.
+		p.mb-5(data-aos='fade-right') Es necesario que la columna que tiene una definición de clave foránea esté indexada mediante #[em KEY](numero). Sin embargo, esto no debe generar preocupación, ya que si no se especifica explícitamente, MySQL realizará la indexación de manera implícita.
 		.row.justify-content-center.mb-5
 			.col-lg-8
 				.p-4.mb-4(style="background-color: #e3dfeb") 
-					p.mb-0 9Esta configuración requiere una clave foránea en la columna #[b 'persona_id'], que hace referencia a la columna #[b 'id_persona'] de la tabla 'personas2' (#[b FOREIGN KEY] (persona_id) REFERENCES #[b personas2(id_persona))]. La definición incluye las acciones a realizar cuando se elimina una fila en la tabla #[b 'personas2']. 
+					p.mb-0 Esta configuración requiere una clave foránea en la columna #[b 'persona_id'], que hace referencia a la columna #[b 'id_persona'] de la tabla 'personas2' (#[b #[em FOREIGN KEY]] (persona_id) #[em REFERENCES] #[b personas2(id_persona))]. La definición incluye las acciones a realizar cuando se elimina una fila en la tabla #[b 'personas2']. 
 		.f-1-7.p-5.mn.mb-5
 			.row.justify-content-center.mb-5
 				.col-lg-4.mb-lg-0.mb-3(data-aos="fade-right")
@@ -651,7 +651,7 @@
 							p.mb-0 Borrar o modificar una clave en una fila en la tabla referenciada conlleva eliminar las filas con el mismo valor de clave foránea o cambiar los valores de esas claves foráneas.
 							
 						.p-4(titulo="SET NULL")
-							p.mb-0 Al borrar o editar una clave en una fila en la tabla referenciada, se establece el valor NULL en las claves foráneas con el mismo valor.  
+							p.mb-0 Al borrar o editar una clave en una fila en la tabla referenciada, se establece el valor #[em NULL] en las claves foráneas con el mismo valor.  
 							
 						.p-4(titulo="NO ACTION ")
 							p.mb-0 Las claves foráneas no se alteran, ni se eliminan filas en la tabla que las contiene. 
@@ -691,7 +691,7 @@
 								|) ENGINE=InnoDB; 
 								br
 								|Query OK, 0 rows affected (0.19 sec) 
-		p.mb-5(data-aos='fade-right') Si se intenta eliminar una fila de la tabla personas3 con un cierto valor en id_persona, se producirá un error si existen filas en la tabla telefonos3 en la columna persona_id con el mismo valor. La fila en personas3 no será eliminada a menos que se eliminen previamente las filas correspondientes en la tabla telefonos3 que comparten el mismo valor de clave foránea, debido a que se ha definido una restricción de tipo DELETE RESTRICT. 
+		p.mb-5(data-aos='fade-right') Si se intenta eliminar una fila de la tabla personas3 con un cierto valor en id_persona, se producirá un error si existen filas en la tabla telefonos3 en la columna persona_id con el mismo valor. La fila en personas3 no será eliminada a menos que se eliminen previamente las filas correspondientes en la tabla telefonos3 que comparten el mismo valor de clave foránea, debido a que se ha definido una restricción de tipo #[em DELETE RESTRICT.] 
 			br
 			br
 			| Si se modifica el valor de la columna id_persona en la tabla personas3, también se deberán modificar los valores de la columna persona_id en la tabla telefonos3 para mantener la integridad referencial. 
@@ -768,7 +768,7 @@
 		p.mb-5(data-aos='fade-right') De vez en cuando es preciso eliminar una tabla, ya sea porque es más fácil crearla de nuevo que alterarla, o porque ya es prescindible. 
 		.row.justify-content-center.mb-5
 			.col-lg-5.mb-lg-0.mb-3(data-aos="fade-right")
-				p Para borrar una tabla se usará la sentencia DROP TABLE. 
+				p Para borrar una tabla se usará la sentencia #[em DROP TABLE]. 
 				.tarjeta-codigo.p-2.mb-5
 					pre.language-html(language="html").mt-5
 						code DROP TABLE [IF EXISTS] tbl_name [, tbl_name] 
@@ -791,7 +791,7 @@
 							|Query OK, 0 rows affected, 1 warning (0.00 sec) 
 							br
 							|mysql&gt;
-		p.mb-5(data-aos='fade-right') De manera similar, se puede borrar bases de datos enteras, utilizando la sentencia DROP DATABASE. La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, una tabla y se borrará la base de datos. 
+		p.mb-5(data-aos='fade-right') De manera similar, se puede borrar bases de datos enteras, utilizando la sentencia #[em DROP DATABASE]. La sintaxis asimismo es muy sencilla, a continuación, se creará una base de datos, una tabla y se borrará la base de datos. 
 		.row.justify-content-center.mb-5
 			.col-lg-6(data-aos="zoom-in")
 				.tarjeta-codigo.p-2.mb-5

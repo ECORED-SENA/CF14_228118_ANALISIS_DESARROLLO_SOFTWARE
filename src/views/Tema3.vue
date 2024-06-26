@@ -28,7 +28,7 @@
     Separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1 Inserción de registros 
-    p.mb-5(data-aos='fade-right') La forma más directa de añadir una fila nueva a una tabla es mediante una sentencia INSERT. En la versión más sencilla de esta sentencia, se debe indicar la tabla a la que se quieren agregar filas y los valores para cada columna. Las columnas de tipo cadena o fecha deben estar entre comillas sencillas o dobles, aunque esto no es necesario para las columnas numéricas, las cuales también pueden estar entrecomilladas. 
+    p.mb-5(data-aos='fade-right') La forma más directa de añadir una fila nueva a una tabla es mediante una sentencia #[em INSERT]. En la versión más sencilla de esta sentencia, se debe indicar la tabla a la que se quieren agregar filas y los valores para cada columna. Las columnas de tipo cadena o fecha deben estar entre comillas sencillas o dobles, aunque esto no es necesario para las columnas numéricas, las cuales también pueden estar entrecomilladas. 
     .row.justify-content-center.mb-5
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
         .tarjeta-codigo.p-2.mb-5
@@ -78,7 +78,7 @@
               br
               |MariaDB [prueba]&gt; 
       .col-lg-5(data-aos="fade-left")
-        p.mb-4(data-aos='fade-right') Si no es necesario determinar un valor preciso para alguna columna, se puede asignar el valor por defecto especificado para esa columna al momento de crear la tabla, utilizando la palabra DEFAULT. 
+        p.mb-4(data-aos='fade-right') Si no es necesario determinar un valor preciso para alguna columna, se puede asignar el valor por defecto especificado para esa columna al momento de crear la tabla, utilizando la palabra #[em DEFAULT]. 
         .tarjeta-codigo.p-2.mb-2
           pre.language-html(language="html").mt-5
             code MariaDB [prueba]&gt; INSERT INTO gente (nombre, fecha, edad) VALUES (‘Perillo’, DEFAULT, DEFAULT); 
@@ -113,7 +113,7 @@
               |5 rows in set (0.000 sec) 
               br
               |MariaDB [prueba]&gt;
-    p.mb-5(data-aos='fade-right') El orden en la sentencia INSERT es muy importante, conserve una correspondencia como se presenta en la siguiente imagen. 
+    p.mb-5(data-aos='fade-right') El orden en la sentencia #[em INSERT] es muy importante, conserve una correspondencia como se presenta en la siguiente imagen. 
     .row.justify-content-center.mb-5
       .col-8: img(src='@/assets/curso/temas/21.png', alt='')
     p.mb-5(data-aos='fade-right') Finalmente, estamos listos para aprender cómo se actualizan los datos que se han registrado. 
@@ -137,7 +137,7 @@
     .row.justify-content-center.mb-5
       .col-lg-6.mb-lg-0.mb-3(data-aos="fade-right")
         .tarjeta.p-4.mb-3(style="background-color: #e3dfeb ")
-          p.mb-0 Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia UPDATE 
+          p.mb-0 Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia #[em UPDATE] 
         .tarjeta-codigo.p-2.mb-5
           pre.language-html(language="html").mt-5
             code MariaDB [prueba]&gt; UPDATE gente SET fecha=‘2012-12-12’; 
@@ -201,11 +201,11 @@
               |5 rows in set (0.000 sec) 
               br
               |MariaDB [prueba]&lt;
-    p.mb-5(data-aos='fade-right') Sin embargo, no es necesario actualizar todas las filas de la tabla, ya que se puede definir cuáles filas se desean actualizar. Esto se logra mediante la cláusula WHERE, que permite establecer una condición. Solo las filas que cumplan con dicha condición serán actualizadas." 
+    p.mb-5(data-aos='fade-right') Sin embargo, no es necesario actualizar todas las filas de la tabla, ya que se puede definir cuáles filas se desean actualizar. Esto se logra mediante la cláusula #[em WHERE], que permite establecer una condición. Solo las filas que cumplan con dicha condición serán actualizadas." 
     .row.justify-content-center.mb-5
       .col-lg-6.mb-lg-0.mb-3(data-aos="fade-right")
         .tarjeta.p-4.mb-3(style="background-color: #e3dfeb ")
-          p.mb-0 Esta versión clarifica el uso de la cláusula WHERE y mejora la estructura de las oraciones para una lectura más fluida. 
+          p.mb-0 Esta versión clarifica el uso de la cláusula #[em WHERE] y mejora la estructura de las oraciones para una lectura más fluida. 
         .tarjeta-codigo.p-2.mb-5
           pre.language-html(language="html").mt-5
             code MariaDB [prueba]&lt; UPDATE gente SET edad = 55, fecha = ‘1970-12-31’ WHERE nombre = ‘Tulano’; 
@@ -277,7 +277,7 @@
     .row.justify-content-center.mb-5
       .col-lg-6.mb-lg-0.mb-3(data-aos="fade-right")
         .tarjeta.p-4.mb-3(style="background-color: #e3dfeb ")
-          p.mb-0 Para borrar filas se utiliza la sentencia DELETE. La sintaxis es muy similar a la de UPDATE: 
+          p.mb-0 Para borrar filas se utiliza la sentencia #[em DELETE]. La sintaxis es muy similar a la de #[em UPDATE]: 
         .tarjeta-codigo.p-2.mb-5
           pre.language-html(language="html").mt-5
             code DELETE [LOW_PRIORITY] [QUICK] [IGNORE] FROM table_name 
@@ -346,7 +346,7 @@
               |MariaDB [prueba]&gt; 
       .col-lg-6.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/23.svg', alt='')
     .titulo-tres.mb-4: h3.mb-0 Vaciar una tabla 
-    p.mb-5(data-aos='fade-right') Cuando se desea borrar todas las filas de una tabla, es posible utilizar la sentencia DELETE sin especificar condiciones, como se mencionó anteriormente. Sin embargo, existe una alternativa más rápida: la sentencia TRUNCATE. A diferencia del DELETE, que elimina las filas de manera secuencial, TRUNCATE remueve todos los datos borrando y recreando la tabla vacía, lo cual resulta mucho más eficiente 
+    p.mb-5(data-aos='fade-right') Cuando se desea borrar todas las filas de una tabla, es posible utilizar la sentencia #[em DELETE] sin especificar condiciones, como se mencionó anteriormente. Sin embargo, existe una alternativa más rápida: la sentencia #[em TRUNCATE]. A diferencia del #[em DELETE], que elimina las filas de manera secuencial, #[em TRUNCATE] remueve todos los datos borrando y recreando la tabla vacía, lo cual resulta mucho más eficiente 
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="zoom-in")
         .tarjeta-codigo.p-2.mb-5

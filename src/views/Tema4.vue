@@ -189,8 +189,8 @@
               .lista-ol--cuadro__vineta
                 span(style="color: black") 7
               | Ahora debe conectar dando doble clic.
-        p Ya contamos con bases de datos y sabemos cómo agregar y modificar datos. A continuación, aprenderemos a extraer datos de una base de datos utilizando nuevamente la sentencia SELECT.
-    p.mb-5(data-aos='fade-right') La sintaxis de SELECT puede ser complicada; sin embargo, en este punto no se explicarán todas sus opciones. Una forma más general de presentar su sintaxis es la siguiente:  
+        p Ya contamos con bases de datos y sabemos cómo agregar y modificar datos. A continuación, aprenderemos a extraer datos de una base de datos utilizando nuevamente la sentencia #[em SELECT].
+    p.mb-5(data-aos='fade-right') La sintaxis de #[em SELECT] puede ser complicada; sin embargo, en este punto no se explicarán todas sus opciones. Una forma más general de presentar su sintaxis es la siguiente:  
     .fondo-slyder.p-5.mb-5.mn
       .tarjeta.tarjeta--gris.p-4
         SlyderA(tipo='b')
@@ -218,7 +218,7 @@
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Cálculo de cobro por llamadas 
-              p Para calcular el cobro de llamadas salientes a números de celular o a larga distancia nacional con 10 dígitos en el destino, primero se filtran estas llamadas. Se usa la función LENGTH para identificar las que tienen 10 dígitos. Luego, se calcula el número de minutos dividiendo los segundos de la duración por 60 y redondeando hacia arriba con la función CEIL. El valor final se obtiene multiplicando el número de minutos redondeado por el costo por minuto, que es $85. 
+              p Para calcular el cobro de llamadas salientes a números de celular o a larga distancia nacional con 10 dígitos en el destino, primero se filtran estas llamadas. Se usa la función #[em LENGTH] para identificar las que tienen 10 dígitos. Luego, se calcula el número de minutos dividiendo los segundos de la duración por 60 y redondeando hacia arriba con la función #[em CEIL]. El valor final se obtiene multiplicando el número de minutos redondeado por el costo por minuto, que es $85. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT *, facturar/60 AS minutos, CEIL(facturar/60) AS minutos_redondeado, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/33.png', alt='')
@@ -233,10 +233,10 @@
           p Los operadores lógicos, se emplean para crear expresiones lógicas complejas. Permite el uso de álgebra booleana y ayuda a crear condiciones o filtros de información mucho más precisos. 
             br
             br
-            |Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: TRUE y FALSE, respectivamente. 
+            |Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: #[em TRUE y FALSE], respectivamente. 
             br
             br
-            |En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores NULL. El valor verdadero se implementa como 1 o TRUE, el falso como 0 o FALSE y, el desconocido como NULL. 
+            |En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores NULL. El valor verdadero se implementa como 1 o #[em TRUE], el falso como 0 o #[em FALSE] y, el desconocido como #[em NULL]. 
         .col-lg-4.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/34.svg', alt='')
       p.fw-bold Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos:  
       .row.justify-content-center.mb-5
@@ -376,7 +376,7 @@
                 |NULL | 1 | +————+—————+—————+——————+ 1 row in set (0.000 sec) MariaDB [prueba]&gt;
     .f-1-5.p-5.mn.mb-5
       .titulo-tres.mb-4: h3.mb-0 B) Operadores de igualdad 
-      p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado TRUE si son iguales o FALSE si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
+      p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado #[em TRUE] si son iguales o #[em FALSE] si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
       .tarjeta-codigo.p-2.mb-5
         pre.language-html(language="html").mt-5
           code SELECT * FROM cdr  WHERE registro = ‘2018-01-02 10:19:08’ 
@@ -424,7 +424,7 @@
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.3 Ordenar resultados 
-    p.mb-5(data-aos='fade-right') Se puede agregar una cláusula ORDER BY para ordenar los resultados por la columna deseada en orden ascendente (ASC) o descendente (DESC). 
+    p.mb-5(data-aos='fade-right') Se puede agregar una cláusula #[em ORDER BY] para ordenar los resultados por la columna deseada en orden ascendente (ASC) o descendente (DESC). 
     .fondo-slyder.p-5.mb-5.mn
       .tarjeta.tarjeta--gris.p-4
         SlyderA(tipo='b')
@@ -441,12 +441,12 @@
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Agrupar por múltiples criterios   
-              p Se puede agrupar por varios criterios a la vez, por ejemplo, ordenar los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro: SELECT * FROM cdr ORDER BY facturar DESC, registro ASC. 
+              p Se puede agrupar por varios criterios a la vez, por ejemplo, ordenar los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro: #[em SELECT * FROM cdr ORDER BY] facturar DESC, registro ASC. 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/38.png', alt='')
     Separador
     #t_4_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.4 Listar y limitar resultados. 
-    p.mb-5(data-aos='fade-right') La principal forma de limitar resultados en una consulta es mediante el uso de la cláusula WHERE para filtrar condiciones en los datos. Sin embargo, cuando aun así los resultados son demasiados, es necesario paginarlos o presentarlos por partes. Para esto, se utiliza la cláusula LIMIT. 
+    p.mb-5(data-aos='fade-right') La principal forma de limitar resultados en una consulta es mediante el uso de la cláusula #[em WHERE] para filtrar condiciones en los datos. Sin embargo, cuando aun así los resultados son demasiados, es necesario paginarlos o presentarlos por partes. Para esto, se utiliza la cláusula #[em LIMIT]. 
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--morada")
       .row.justify-content-center(titulo="Filtrar y ordenar llamadas")
         .col-lg-5.mb-lg-0.mb-3
@@ -518,7 +518,7 @@
     .f-2-3.p-5.mn.mb-5
       #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
         h2 4.5 Agrupar filas
-      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[b SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[b GROUP BY]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
+      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[b #[em SELECT]] basándose en los valores de una columna específica, utilizando la cláusula #[b #[em GROUP BY]]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
       .row.justify-content-center.mb-5
         .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
           .tarjeta.p-4(style="background-color:  #e3dfeb")
