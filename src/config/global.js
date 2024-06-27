@@ -52,7 +52,7 @@ export default {
           },
           {
             numero: '1.3',
-            titulo: 'SQL – Standard Query Language',
+            titulo: 'SQL - Standard Query Language',
             hash: 't_1_3',
           },
         ],
@@ -61,7 +61,7 @@ export default {
       {
         nombreRuta: 'tema2',
         numero: '2',
-        titulo: 'SQL para la creación y eliminación de bases de datos – DDL',
+        titulo: 'SQL para la creación y eliminación de bases de datos - DDL',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -135,7 +135,7 @@ export default {
       {
         nombreRuta: 'tema5',
         numero: '5',
-        titulo: 'Consulta multitablas – DML',
+        titulo: 'Consulta multitablas - DML',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -199,25 +199,30 @@ export default {
   complementario: [
     {
       tema: 'Funciones en MySQL',
-      referencia: 'Shakmuria. (2023, abril 5). Introducción al SQL: Comandos básicos y ejemplos prácticos [Archivo de video]. YouTube.',
+      referencia:
+        'Shakmuria. (2023, abril 5). Introducción al SQL: Comandos básicos y ejemplos prácticos [Archivo de video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=SNjTk5GjbTw&ab_channel=Shakmuria',
     },
     {
       tema: 'Consulta multitablas – DML',
-      referencia: 'Códigos de Programación - MR. (2023, abril 10). Aprende SQL en 20 minutos [Archivo de video]. YouTube.',
+      referencia:
+        'Códigos de Programación - MR. (2023, abril 10). Aprende SQL en 20 minutos [Archivo de video]. YouTube.',
       tipo: 'Video',
-      link: 'https://www.youtube.com/watch?v=E9m_ii37pNY&ab_channel=C%C3%B3digosdeProgramaci%C3%B3n-MR',
+      link:
+        'https://www.youtube.com/watch?v=E9m_ii37pNY&ab_channel=C%C3%B3digosdeProgramaci%C3%B3n-MR',
     },
     {
       tema: 'Combinación interna (INNER JOIN)',
-      referencia: 'TodoCode. (2023, marzo 15). Tutorial Completo de SQL para Principiantes [Archivo de video]. YouTube.',
+      referencia:
+        'TodoCode. (2023, marzo 15). Tutorial Completo de SQL para Principiantes [Archivo de video]. YouTube.',
       tipo: 'Video',
       link: 'https://www.youtube.com/watch?v=0BstRqp6Svg&ab_channel=TodoCode',
     },
     {
       tema: 'MySQL',
-      referencia: 'MySQL 8.0 Reference Manual. (2021). 3.3.2 #[em Creating a Table]. MySQL.',
+      referencia:
+        'MySQL 8.0 Reference Manual. (2021). 3.3.2 #[em Creating a Table]. MySQL.',
       tipo: 'Página web',
       link: 'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
     },
@@ -237,80 +242,100 @@ export default {
   glosario: [
     {
       termino: 'SQL',
-      significado: 'Lenguaje de Consulta Estructurada (#[em Structured Query Language]), utilizado para gestionar y manipular bases de datos relacionales.',
+      significado:
+        'Lenguaje de Consulta Estructurada (#[em Structured Query Language]), utilizado para gestionar y manipular bases de datos relacionales.',
     },
     {
       termino: 'SGBD',
-      significado: 'Sistema de Gestión de Bases de Datos. #[em Software] que permite la creación, modificación y administración de una base de datos',
+      significado:
+        'Sistema de Gestión de Bases de Datos. #[em Software] que permite la creación, modificación y administración de una base de datos',
     },
     {
       termino: 'DDL',
-      significado: 'Lenguaje de Definición de Datos (#[em Data Definition Language]). Subconjunto de comandos en SQL usados para definir la estructura de la base de datos. Incluye comandos como #[em CREATE y DROP.]',
+      significado:
+        'Lenguaje de Definición de Datos (#[em Data Definition Language]). Subconjunto de comandos en SQL usados para definir la estructura de la base de datos. Incluye comandos como #[em CREATE y DROP.]',
     },
     {
       termino: 'DML',
-      significado: 'Lenguaje de Manipulación de Datos (#[em Data Manipulation Language]). Subconjunto de comandos en SQL usados para el manejo de datos, incluyendo #[em SELECT, INSERT, UPDATE y DELETE.]',
+      significado:
+        'Lenguaje de Manipulación de Datos (#[em Data Manipulation Language]). Subconjunto de comandos en SQL usados para el manejo de datos, incluyendo #[em SELECT, INSERT, UPDATE y DELETE.]',
     },
     {
       termino: 'Clave primaria',
-      significado: 'Atributo o conjunto de atributos que identifica de manera única cada fila en una tabla.',
+      significado:
+        'Atributo o conjunto de atributos que identifica de manera única cada fila en una tabla.',
     },
     {
       termino: 'Índice',
-      significado: 'Estructura de datos que mejora la velocidad de las operaciones de la base de datos.',
+      significado:
+        'Estructura de datos que mejora la velocidad de las operaciones de la base de datos.',
     },
     {
       termino: 'JOIN',
-      significado: 'Operación en SQL que permite combinar filas de dos o más tablas basadas en una relación común entre ellas.',
+      significado:
+        'Operación en SQL que permite combinar filas de dos o más tablas basadas en una relación común entre ellas.',
     },
     {
       termino: '<em>FOREIGN KEY</em>',
-      significado: 'Clave foránea, un campo en una tabla que es clave primaria en otra, utilizada para establecer y hacer cumplir un vínculo entre los datos en dos tablas.',
+      significado:
+        'Clave foránea, un campo en una tabla que es clave primaria en otra, utilizada para establecer y hacer cumplir un vínculo entre los datos en dos tablas.',
     },
     {
       termino: 'Normalización',
-      significado: 'proceso de organización de campos y tablas de una base de datos para minimizar la redundancia y la dependencia.',
+      significado:
+        'proceso de organización de campos y tablas de una base de datos para minimizar la redundancia y la dependencia.',
     },
     {
       termino: 'CRUD',
-      significado:'Acrónimo de Crear, Leer, Actualizar y Eliminar (#[em Create, Read, Update, Delete]). Representa las operaciones básicas en una base de datos.',
+      significado:
+        'Acrónimo de Crear, Leer, Actualizar y Eliminar (#[em Create, Read, Update, Delete]). Representa las operaciones básicas en una base de datos.',
     },
   ],
   referencias: [
     {
-      referencia:'Asale y Rae. (2021). Base. Diccionario de la lengua española.',
-      link:'https://dle.rae.es/base#CiiosqO',
+      referencia:
+        'Asale y Rae. (2021). Base. Diccionario de la lengua española.',
+      link: 'https://dle.rae.es/base#CiiosqO',
     },
     {
-      referencia:'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
+      referencia:
+        'Henry.Sudarshan S., S. A. (2002). Fundamentos de bases de datos (5.a ed.). McGraw-Hill Interamericana de España S.L.',
     },
     {
-      referencia:'Kyocera. (2021). Conceptos sobre base de datos orientada a objetos. KYOCERA Document Solutions España.',
-      link:'https://www.kyoceradocumentsolutions.es/es/smarter-workspaces/business-challenges/paperless/conceptos-sobre-base-de-datos-orientada-a-objetos.html',
+      referencia:
+        'Kyocera. (2021). Conceptos sobre base de datos orientada a objetos. KYOCERA Document Solutions España.',
+      link:
+        'https://www.kyoceradocumentsolutions.es/es/smarter-workspaces/business-challenges/paperless/conceptos-sobre-base-de-datos-orientada-a-objetos.html',
     },
     {
-      referencia:'López, J. (2009). Algoritmos y programación (guía para docentes).',
-      link:'http://www.eduteka.org/GuiaAlgoritmos.php',
+      referencia:
+        'López, J. (2009). Algoritmos y programación (guía para docentes).',
+      link: 'http://www.eduteka.org/GuiaAlgoritmos.php',
     },
     {
-      referencia:'Microsoft. (2021). Descripción de los conceptos básicos de normalización de la base de datos.',
-      link: 'https://docs.microsoft.com/es-es/office/troubleshoot/access/database-normalization-description',   
+      referencia:
+        'Microsoft. (2021). Descripción de los conceptos básicos de normalización de la base de datos.',
+      link:
+        'https://docs.microsoft.com/es-es/office/troubleshoot/access/database-normalization-description',
     },
     {
-      referencia:'MySQL 8.0 Reference Manual. (2021).13.1.20.5 FOREIGN KEY Constraints. MySQL.',
-      link:'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
+      referencia:
+        'MySQL 8.0 Reference Manual. (2021).13.1.20.5 FOREIGN KEY Constraints. MySQL.',
+      link: 'https://dev.mysql.com/doc/refman/8.0/en/creating-tables.html',
     },
     {
-      referencia:'MySQLTutorial. (2020). MySQL AND Operator. MySQL.',
-      link:'https://www.mysqltutorial.org/mysql-and',
+      referencia: 'MySQLTutorial. (2020). MySQL AND Operator. MySQL.',
+      link: 'https://www.mysqltutorial.org/mysql-and',
     },
     {
-      referencia:'MySQLTutorial. (2020). MySQL OR Operator. MySQL.',
-      link:'https://www.mysqltutorial.org/mysql-or',
+      referencia: 'MySQLTutorial. (2020). MySQL OR Operator. MySQL.',
+      link: 'https://www.mysqltutorial.org/mysql-or',
     },
     {
-      referencia:'Navarro, J., y Lafuente, M. (2010). Ilustración de moda: dibujo plano. Sistema de Bibliotecas SENA.',
-      link:'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/q6j6k0/sena_aleph000023241',
+      referencia:
+        'Navarro, J., y Lafuente, M. (2010). Ilustración de moda: dibujo plano. Sistema de Bibliotecas SENA.',
+      link:
+        'https://sena-primo.hosted.exlibrisgroup.com/permalink/f/q6j6k0/sena_aleph000023241',
     },
   ],
   creditos: [
@@ -335,12 +360,14 @@ export default {
         {
           nombre: 'Henry Eduardo Bastidas Paruma',
           cargo: 'Experto Temático',
-          centro: 'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
         {
           nombre: 'Peter Emerson Pinchao Solis',
           cargo: 'Experto Temático',
-          centro: 'Centro de Teleinformática y Producción Industrial - Regional Cauca',
+          centro:
+            'Centro de Teleinformática y Producción Industrial - Regional Cauca',
         },
         {
           nombre: 'Paola Alexandra Moya',
