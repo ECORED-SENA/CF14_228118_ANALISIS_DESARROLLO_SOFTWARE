@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="295" height="227" viewBox="0 0 295 227">
+  <g id="_14" data-name="14" transform="translate(-1125 -5890)">
+    <rect id="Rectángulo_403319" data-name="Rectángulo 403319" width="295" height="227" rx="8" transform="translate(1125 5890)" fill="#f2e5fd"/>
+    <g id="Grupo_1101607" data-name="Grupo 1101607" transform="translate(53 35)">
+      <g id="Rectángulo_403318" data-name="Rectángulo 403318" transform="translate(1125 5884)" fill="#fff" stroke="#00ffdf" stroke-width="6">
+        <rect width="190" height="169" rx="24" stroke="none"/>
+        <rect x="3" y="3" width="184" height="163" rx="21" fill="none"/>
+      </g>
+      <path id="Trazado_879249" data-name="Trazado 879249" d="M-3541-5764.535h190" transform="translate(4666 11700)" fill="none" stroke="#00ffdf" stroke-width="6"/>
+      <path id="Trazado_879250" data-name="Trazado 879250" d="M-3541-5764.535h190" transform="translate(4666 11769)" fill="none" stroke="#00ffdf" stroke-width="6"/>
+      <path id="Trazado_879251" data-name="Trazado 879251" d="M-3541-5764.535h45.465" transform="translate(-4544.535 9431) rotate(90)" fill="none" stroke="#00ffdf" stroke-width="6"/>
+      <path id="Trazado_879252" data-name="Trazado 879252" d="M-3541-5764.535h45.465" transform="translate(-4544.535 9545.465) rotate(90)" fill="none" stroke="#00ffdf" stroke-width="6"/>
+      <path id="Trazado_879253" data-name="Trazado 879253" d="M-3496.812-5731.5h99.445" transform="translate(4666 11700)" fill="none" stroke="#a854f3" stroke-width="7"/>
+      <path id="Polígono_19" data-name="Polígono 19" d="M10.264,3.039a2,2,0,0,1,3.473,0L22.29,18.008A2,2,0,0,1,20.554,21H3.446A2,2,0,0,1,1.71,18.008Z" transform="translate(1285.5 5956.5) rotate(90)" fill="#a854f3"/>
+      <path id="Polígono_20" data-name="Polígono 20" d="M10.264,3.039a2,2,0,0,1,3.473,0L22.29,18.008A2,2,0,0,1,20.554,21H3.446A2,2,0,0,1,1.71,18.008Z" transform="translate(1153.688 5980.5) rotate(-90)" fill="#a854f3"/>
+    </g>
+  </g>
+</svg>
