@@ -79,7 +79,7 @@ export default {
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'SQL para la creación y eliminación de bases de datos – DDL ',
+        titulo: 'SQL para la creación y eliminación de bases de datos - DDL ',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -102,7 +102,7 @@ export default {
       {
         nombreRuta: 'tema4',
         numero: '4',
-        titulo: 'SQL para consulta de datos – DML',
+        titulo: 'SQL para consulta de datos - DML',
         desarrolloContenidos: true,
         subMenu: [
           {
