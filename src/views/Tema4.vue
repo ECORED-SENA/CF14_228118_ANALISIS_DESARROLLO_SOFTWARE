@@ -9,7 +9,7 @@
     .row.justify-content-center.mb-5
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
         .p-4(style="background-color:#f3f9ff ")
-          p.mb-0 Para encontrar información dentro de una base de datos, es crucial entender la estructura y naturaleza de los datos. Por ejemplo, los datos de tipo fecha se estructuran en el formato YYYY-MM-DD. Si se necesita listar registros de un año específico, es necesario emplear una función que pueda referenciar ese dato particular dentro de la columna. Por esta razón, es importante revisar algunas funciones específicas antes de comenzar a trabajar con consultas de datos.
+          p.mb-0 Para encontrar información dentro de una base de datos, es crucial entender la estructura y naturaleza de los datos. Por ejemplo, los datos de tipo fecha se estructuran en el formato #[code YYYY-MM-DD]. Si se necesita listar registros de un año específico, es necesario emplear una función que pueda referenciar ese dato particular dentro de la columna. Por esta razón, es importante revisar algunas funciones específicas antes de comenzar a trabajar con consultas de datos.
       .col-lg-5.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/25.svg', alt='') 
     Separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -19,7 +19,7 @@
       .col-lg-11
         p.mb-0 Considerando que MySQL es versátil en lo que respecta a operadores y también muy extenso en cuanto a funciones, dispone de una gran variedad de ellas. Sin embargo, solo se explicarán algunas funciones esenciales para entender cómo funcionan en general.  Algunas funciones son:  
     .row.justify-content-center.mb-5
-      .col-lg-8
+      .col-lg-10
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
           h5 Tabla 1. 
           span Funciones en MySQL
@@ -73,10 +73,10 @@
               tr
                 td SEC_TO_TIME
                 td Devuelve un valor de tiempo basado en los segundos especificados.
-    p.mb-5(data-aos='fade-right') Para este ejemplo, utilizaremos una base de datos de llamadas telefónicas. La estructura de esta base de datos se presentará a continuación, y con ella aprenderemos a realizar consultas.
-    .f-2-1.p-5.mn.mb-5
+    p.mb-4(data-aos='fade-right') Para este ejemplo, utilizaremos una base de datos de llamadas telefónicas. La estructura de esta base de datos se presentará a continuación, y con ella aprenderemos a realizar consultas.
+    .f-2-1.p-5.pt-0.mn.mb-0.pb-4
       p.fw-bold Ejemplo llamadas telefónicas: 
-      .row.justify-content-center.mb-5
+      .row.justify-content-center.mb-4
         .col-lg-8(data-aos="zoom-in")
           .tarjeta.p-4.mb-3(style="background-color: #f7eefe ") 
             .row.justify-content-center.align-items-center
@@ -91,18 +91,30 @@
                   .col-lg-2.col-3.mb-lg-0.mb-3
                     img.d-inline-block(src='@/assets/curso/temas/n2-1.svg', alt='' style="width: 62px").me-4.mb-lg-0.mb-3
                   .col-lg-10.col-3.mb-lg-0.mb-3
-                    p.mb-0 Importe el archivo con la sentencia source&gt;ruta del archivo sq
-          .tarjeta-codigo.p-2.mb-5
+                    p.mb-0 Importe el archivo con la sentencia #[code source] <br> #[em &lt;ruta del archivo sql&gt;]
+          .tarjeta-codigo.p-2.mb-4
             pre.language-html(language="html").mt-5
               code MariaDB [prueba]&gt; source D:/Peter/Downloads/cdr.sql;
-          a.anexo.mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
+          
+          
+          //a.anexo(style="background-color:#F2E5FD").mb-4(:href="obtenerLink('downloads/prueba.pdf')" target="_blank")
             .row.justify-content-around.align-items-center
               .anexo__icono
                 img(src="@/assets/template/icono-zip.svg")
               .anexo__texto
-                h4 BASE DE DATOS.
-                p Descargue aquí el archivo para crear la base de datos cdr. 
+                h4(style="color: #3A1D71") BASE DE DATOS.
+                p(style="color: #3A1D71") Descargue aquí el archivo para crear la base de datos cdr. 
+
+          a.anexo(style="background-color:#F2E5FD").mb-4(:href="obtenerLink('/downloads/Base_de_datos.zip')" target="_blank")
+            .anexo__icono
+              img(src="@/assets/template/icono-zip.svg")
+            .anexo__texto
+              p.mb-0 #[strong.text-primary BASE DE DATOS.]
+              p(style="color: #3A1D71") Descargue aquí el archivo para crear la base de datos cdr. 
+
       p.mb-5(data-aos='fade-right') Conozca los datos de prueba con los que se trabajará. 
+
+
       .titulo-sexto.color-acento-contenido(data-aos='fade-right')
         h5 Tabla 2. 
         span Diccionario de datos
@@ -145,7 +157,9 @@
                   td INT            
                   td 10           
                   td Lo que dura la llamada desde el momento en que es contestada la llamada
+
     p.mb-5(data-aos='fade-right') A partir de este punto usaremos #[b MySQL WorkBench], para visualizar mejor los resultados.
+
     .row.justify-content-center.align-items-center.mb-3
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
         .titulo-sexto.color-acento-contenido(data-aos='fade-right')
@@ -170,11 +184,11 @@
             li
               .lista-ol--cuadro__vineta
                 span(style="color: black") 4
-              | Ponga el usuario root.
+              | Ponga el usuario #[code root].
             li
               .lista-ol--cuadro__vineta
                 span(style="color: black") 5
-              | Digite el nombre de la base de datos que usará: cdr.
+              | Digite el nombre de la base de datos que usará: #[code cdr].
             li
               .lista-ol--cuadro__vineta
                 span(style="color: black") 6
@@ -189,15 +203,15 @@
               .lista-ol--cuadro__vineta
                 span(style="color: black") 7
               | Ahora debe conectar dando doble clic.
-        p Ya contamos con bases de datos y sabemos cómo agregar y modificar datos. A continuación, aprenderemos a extraer datos de una base de datos utilizando nuevamente la sentencia #[em SELECT].
-    p.mb-5(data-aos='fade-right') La sintaxis de #[em SELECT] puede ser complicada; sin embargo, en este punto no se explicarán todas sus opciones. Una forma más general de presentar su sintaxis es la siguiente:  
+        p Ya contamos con bases de datos y sabemos cómo agregar y modificar datos. A continuación, aprenderemos a extraer datos de una base de datos utilizando nuevamente la sentencia #[code SELECT].
+    p.mb-5(data-aos='fade-right') La sintaxis de #[code SELECT] puede ser complicada; sin embargo, en este punto no se explicarán todas sus opciones. Una forma más general de presentar su sintaxis es la siguiente:  
     .fondo-slyder.p-5.mb-5.mn
       .tarjeta.tarjeta--gris.p-4
         SlyderA(tipo='b')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Listar todos los elementos 
-              p Para listar todos los elementos de la tabla cdr, se utiliza el comodín *, que indica que se deben seleccionar todas las columnas. 
+              p Para listar todos los elementos de la tabla #[code cdr], se utiliza el comodín *, que indica que se deben seleccionar todas las columnas. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white  SELECT * FROM cdr 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/30.png', alt='')
@@ -210,59 +224,60 @@
             .col-lg-6.col-7: img(src='@/assets/curso/temas/31.png', alt='')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
-              h4(style="color: #8722E2 ") Uso de alias en columnas 
-              p Asignar un alias a las columnas en las consultas SQL usando la palabra clave AS, que es opcional. Aquí, a la columna origen se le asigna el alias num_orig y a duracion el alias tiempo_llamada. 
+              h4(style="color: #8722E2") Uso de alias en columnas 
+              p Asignar un alias a las columnas en las consultas SQL usando la palabra clave #[code AS], que es opcional. Aquí, a la columna origen se le asigna el alias #[code num_orig] y a duracion el alias #[code tiempo_llamada]. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT origen AS num_orig, destino, duracion AS tiempo_llamada FROM cdr  
             .col-lg-6.col-7: img(src='@/assets/curso/temas/32.png', alt='')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Cálculo de cobro por llamadas 
-              p Para calcular el cobro de llamadas salientes a números de celular o a larga distancia nacional con 10 dígitos en el destino, primero se filtran estas llamadas. Se usa la función #[em LENGTH] para identificar las que tienen 10 dígitos. Luego, se calcula el número de minutos dividiendo los segundos de la duración por 60 y redondeando hacia arriba con la función #[em CEIL]. El valor final se obtiene multiplicando el número de minutos redondeado por el costo por minuto, que es $85. 
+              p Para calcular el cobro de llamadas salientes a números de celular o a larga distancia nacional con 10 dígitos en el destino, primero se filtran estas llamadas. Se usa la función #[code LENGTH] para identificar las que tienen 10 dígitos. Luego, se calcula el número de minutos dividiendo los segundos de la duración por 60 y redondeando hacia arriba con la función #[code CEIL]. El valor final se obtiene multiplicando el número de minutos redondeado por el costo por minuto, que es $85. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT *, facturar/60 AS minutos, CEIL(facturar/60) AS minutos_redondeado, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/33.png', alt='')
     Separador
-    .f-2-2.p-5.mn.mb-5
+    .f-2-2.p-5.mn
       #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
         h2 4.2 Operadores
       p.mb-5(data-aos='fade-right') SQL tiene muchos operadores diferentes según el tipo de columna. Esos operadores se emplean para construir expresiones que se usan en las consultas.  
+      
       .titulo-tres.mb-4: h3.mb-0 A) Operadores lógicos
-      .row.justify-content-center.align-items-center.mb-5
+
+      .row.justify-content-center.align-items-center
         .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
           p Los operadores lógicos, se emplean para crear expresiones lógicas complejas. Permite el uso de álgebra booleana y ayuda a crear condiciones o filtros de información mucho más precisos. 
-            br
-            br
-            |Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: #[em TRUE y FALSE], respectivamente. 
-            br
-            br
-            |En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores NULL. El valor verdadero se implementa como 1 o #[em TRUE], el falso como 0 o #[em FALSE] y, el desconocido como #[em NULL]. 
+          p Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: #[code TRUE y FALSE], respectivamente. 
+          p.mb-0 En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores #[code NULL]. El valor verdadero se implementa como 1 o #[code TRUE], el falso como 0 o #[code FALSE] y, el desconocido como #[code NULL]. 
         .col-lg-4.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/34.svg', alt='')
-      p.fw-bold Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos:  
-      .row.justify-content-center.mb-5
+
+      p.fw-bold.mb-5 Se ejecuta la siguiente sentencia en la consulta para que mirar la naturaleza de los datos:  
+      .row.justify-content-center
         .col-lg-6 
           .tarjeta-codigo.p-2.mb-5
             pre.language-html(language="html").mt-5
               code MariaDB [prueba]&gt; SELECT TRUE, FALSE, NULL; 
                 br
-                |+———+———+———+ 
+                |+------+-------+------+ 
                 br
                 || TRUE | FALSE | NULL | 
                 br
-                |+———+———+———+ 
+                |+------+-------+------+ 
                 br
                 ||    1 |     0 | NULL | 
                 br
-                |+———+———+———+ 
+                |+------+-------+------+ 
+                br
                 br
                 |1 row in set (0.000 sec) 
+                br
                 br
                 |MariaDB [prueba]&gt; 
     .row.justify-content-center.mb-5.g-lg-0
       .col-lg-3
         .p-4(style="background-color: #debefb")
           h4 Operador AND
-          p.mb-0 SQL puede usar el operador AND, que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos y, es falso si cualquier operando es falso o nulo, o si alguno de los dos es nulo. Esto se representa mediante la siguiente tabla de verdad:
+          p.mb-0 SQL puede usar el operador #[code AND], que se trata de un operador binario, es decir, requiere de dos operandos. El resultado de la operación es verdadero, sólo si ambos operandos son verdaderos y, es falso si cualquier operando es falso o nulo, o si alguno de los dos es nulo. Esto se representa mediante la siguiente tabla de verdad:
       .col-lg-7
         .p-4(style="background-color: #f7eefe ")
           p Esto se representa mediante la siguiente tabla de verdad:
@@ -308,20 +323,27 @@
                   td NULL
           .tarjeta-codigo.p-2.mb-5
             pre.language-html(language="html").mt-5
-              code MariaDB [prueba]&gt; SELECT 1 AND 0, 1 AND NULL, 0 AND NULL, 1 AND 0 AND 1; 
+              code MariaDB [prueba]&gt; SELECT 1 AND 0, 1 AND NULL, 0 AND NULL, 
                 br
-                |+————+——————+——————+———————+ | 1 AND 0 | 1 AND NULL | 0 AND 
+                | 1 AND 0 AND 1; 
                 br
-                |NULL | 1 AND 0 AND 1 | 
                 br
-                |+————+——————+——————+———————+ | 0 | NULL | 0 | 0 | +————
+                |+--------+------------+------------+----------------+ 
                 br
-                |+——————+——————+———————+ 1 row in set (0.000 sec)
+                || 1 AND 0 | 1 AND NULL | 0 AND NULL | 1 AND 0 AND 1 | 
+                br
+                |+--------+------------+------------+----------------+  
+                br
+                ||      0 |       NULL |          0 |              0 | 
+                br
+                |+--------+------------+------------+----------------+ 
+                br
+                | 1 row in set (0.000 sec)
     .row.justify-content-center.mb-5.g-lg-0
       .col-lg-3
         .p-4(style="background-color: #debefb")
           h4 Operador OR
-          p.mb-0 SQL este operador también tiene dos formas equivalentes OR El operador OR también es binario. Si ambos operandos siendo diferentes de NULL, el resultado es verdadero si alguno de ellos es verdadero y, es falso si los dos son falsos. Si uno de los operandos es NULL el resultado será verdadero si el otro operando es verdadero, y será NULL si el otro operando es falso
+          p.mb-0 SQL este operador también tiene dos formas equivalentes #[code OR]. El operador #[code OR] también es binario. Si ambos operandos siendo diferentes de #[code NULL], el resultado es verdadero si alguno de ellos es verdadero y, es falso si los dos son falsos. Si uno de los operandos es #[code NULL] el resultado será verdadero si el otro operando es verdadero, y será #[code NULL] si el otro operando es falso
       .col-lg-7
         .p-4(style="background-color: #f7eefe ")
           p La tabla de verdad es:
@@ -367,13 +389,23 @@
                   td VERDADERO
           .tarjeta-codigo.p-2.mb-5
             pre.language-html(language="html").mt-5
-              code MariaDB [prueba]&gt; SELECT 1 OR 0, 1 OR NULL, 0 OR NULL, 1 OR 0 OR 1; 
+              code MariaDB [prueba]&gt; SELECT 1 OR 0, 1 OR NULL, 0 OR NULL, 
                 br
-                |+————+—————+—————+——————+ | 1 OR 0 | 1 OR NULL | 0 OR 
+                | 1 OR 0 OR 1; 
                 br
-                |NULL | 1 OR 0 OR 1 | +————+—————+—————+——————+ | 1 | 1 | 
                 br
-                |NULL | 1 | +————+—————+—————+——————+ 1 row in set (0.000 sec) MariaDB [prueba]&gt;
+                |+--------+------------+------------+----------------+ 
+                br
+                || 1 OR 0 | 1 OR NULL | 0 OR NULL | 1 OR 0 OR 1 | 
+                br
+                |+--------+------------+------------+----------------+  
+                br
+                ||      1 |          1 |       NULL |              1 | 
+                br
+                |+--------+------------+------------+----------------+ 
+                br
+                | 1 row in set (0.000 sec)
+
     .f-1-5.p-5.mn.mb-5
       .titulo-tres.mb-4: h3.mb-0 B) Operadores de igualdad 
       p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado #[em TRUE] si son iguales o #[em FALSE] si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
@@ -518,13 +550,14 @@
     .f-2-3.p-5.mn.mb-5
       #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
         h2 4.5 Agrupar filas
-      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[b #[em SELECT]] basándose en los valores de una columna específica, utilizando la cláusula #[b #[em GROUP BY]]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
-      .row.justify-content-center.mb-5
+      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[code SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[b #[em GROUP BY]]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
+      .row.justify-content-center.mb-4
         .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
           .tarjeta.p-4(style="background-color:  #e3dfeb")
             h5 Ejemplo: 
             p.mb-0 Supongamos que deseamos saber cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017. Se consideran llamadas entrantes aquellas que no provienen de una extensión local, identificadas porque el origen tiene más de tres dígitos. 
-        .col-lg-5
+      .row.justify-content-center.mb-4  
+        .col-lg-7
           .tarjeta-codigo.p-2.mb-5
               pre.language-html(language="html").mt-5
                 code SELECT MONTH(registro) AS mes, COUNT(*) AS cantidad 
@@ -534,19 +567,19 @@
                   |WHERE LENGTH(origen) > 3 AND YEAR(registro) = 2017 
                   br
                   |GROUP BY mes 
-      .row.justify-content-center.mb-5
+      .row.justify-content-center.mb-4
         .col-lg-8.col-7.mb-lg-0.mb-3(data-aos="fade-right")
           .titulo-sexto.color-acento-contenido(data-aos='fade-right')
             h5 Figura 4. 
             span Ejemplo llamadas entrantes 2017
           img(src='@/assets/curso/temas/43.png', alt='La imagen presenta  la aplicación de un ejemplo sobre cuántas llamadas entrantes se realizaron durante cada uno de los meses del año 2017.')
-        .col-lg-5
+
+      .row.justify-content-center.mb-4
+        .col-lg-8
           p Pero si se desea mostrar también la agrupación por años y meses para los años 2017, 2018 y 2019, la consulta sería: 
           .tarjeta-codigo.p-2.mb-5
               pre.language-html(language="html").mt-5
-                code SELECT YEAR(registro) AS año,  MONTH(registro) AS mes, COUNT(*) AS cantidad 
-
-                  br
+                code SELECT YEAR(registro) AS año, MONTH(registro) AS mes, COUNT(*) AS cantidad 
                   br
                   |FROM cdr  
                   br
