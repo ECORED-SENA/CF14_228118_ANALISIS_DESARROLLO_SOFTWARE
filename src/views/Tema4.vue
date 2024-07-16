@@ -9,7 +9,7 @@
     .row.justify-content-center.mb-5
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
         .p-4(style="background-color:#f3f9ff ")
-          p.mb-0 Para encontrar información dentro de una base de datos, es crucial entender la estructura y naturaleza de los datos. Por ejemplo, los datos de tipo fecha se estructuran en el formato #[code YYYY-MM-DD]. Si se necesita listar registros de un año específico, es necesario emplear una función que pueda referenciar ese dato particular dentro de la columna. Por esta razón, es importante revisar algunas funciones específicas antes de comenzar a trabajar con consultas de datos.
+          p.mb-0 Para encontrar información dentro de una base de datos, es crucial entender la estructura y naturaleza de los datos. Por ejemplo, los datos de tipo fecha se estructuran en el formato #[strong YYYY-MM-DD]. Si se necesita listar registros de un año específico, es necesario emplear una función que pueda referenciar ese dato particular dentro de la columna. Por esta razón, es importante revisar algunas funciones específicas antes de comenzar a trabajar con consultas de datos.
       .col-lg-5.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/25.svg', alt='') 
     Separador
     #t_4_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -247,7 +247,7 @@
       .row.justify-content-center.align-items-center
         .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
           p Los operadores lógicos, se emplean para crear expresiones lógicas complejas. Permite el uso de álgebra booleana y ayuda a crear condiciones o filtros de información mucho más precisos. 
-          p Recuerde que en el álgebra booleana o álgebra de bool, existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: #[code TRUE y FALSE], respectivamente. 
+          p Recuerde que en el álgebra booleana o álgebra de #[em bool], existen dos valores posibles para ser operados y son los resultados: verdadero y falso. MySQL dispone de dos constantes para esos valores: #[code TRUE y FALSE], respectivamente. 
           p.mb-0 En SQL se añade un tercer valor. Esto es, para hacer posible trabajar con valores #[code NULL]. El valor verdadero se implementa como 1 o #[code TRUE], el falso como 0 o #[code FALSE] y, el desconocido como #[code NULL]. 
         .col-lg-4.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/34.svg', alt='')
 
@@ -408,7 +408,7 @@
 
     .f-1-5.p-5.mn.mb-5
       .titulo-tres.mb-4: h3.mb-0 B) Operadores de igualdad 
-      p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado #[em TRUE] si son iguales o #[em FALSE] si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
+      p.mb-5(data-aos='fade-right') El operador igual (=) compara dos expresiones y da como resultado #[code TRUE] si son iguales o #[code FALSE] si son diferentes. Ya lo hemos usado en ejemplos anteriormente: 
       .tarjeta-codigo.p-2.mb-5
         pre.language-html(language="html").mt-5
           code SELECT * FROM cdr  WHERE registro = ‘2018-01-02 10:19:08’ 
@@ -456,29 +456,29 @@
     Separador
     #t_4_3.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.3 Ordenar resultados 
-    p.mb-5(data-aos='fade-right') Se puede agregar una cláusula #[em ORDER BY] para ordenar los resultados por la columna deseada en orden ascendente (ASC) o descendente (DESC). 
+    p.mb-5(data-aos='fade-right') Se puede agregar una cláusula #[code ORDER BY] para ordenar los resultados por la columna deseada en orden ascendente (#[code ASC]) o descendente (#[code DESC]). 
     .fondo-slyder.p-5.mb-5.mn
       .tarjeta.tarjeta--gris.p-4
         SlyderA(tipo='b')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Orden ascendente por fecha  
-              p Ejemplo para ordenar de manera ascendente por la fecha: SELECT * FROM cdr ORDER BY registro ASC. 
+              p Ejemplo para ordenar de manera ascendente por la fecha: #[code SELECT * FROM cdr ORDER BY registro ASC]. 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/36.png', alt='')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
-              h4(style="color: #8722E2 ") Orden ascendente por fecha 
-              p Ejemplo para ordenar llamadas de larga distancia o celular a 85 pesos el minuto, por el costo mayor al menor: SELECT *, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 ORDER BY CEIL(facturar/60) * 85 DESC. 
+              h4(style="color: #8722E2 ") Ordenar por resultado de operación
+              p Ejemplo para ordenar llamadas de larga distancia o celular a 85 pesos el minuto, por el costo mayor al menor: #[code SELECT *, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 ORDER BY CEIL(facturar/60) * 85 DESC]. 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/37.png', alt='')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Agrupar por múltiples criterios   
-              p Se puede agrupar por varios criterios a la vez, por ejemplo, ordenar los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro: #[em SELECT * FROM cdr ORDER BY] facturar DESC, registro ASC. 
+              p Se puede agrupar por varios criterios a la vez, por ejemplo, ordenar los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro: #[code SELECT * FROM cdr ORDER BY facturar DESC, registro ASC]. 
             .col-lg-6.col-7: img(src='@/assets/curso/temas/38.png', alt='')
     Separador
     #t_4_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.4 Listar y limitar resultados. 
-    p.mb-5(data-aos='fade-right') La principal forma de limitar resultados en una consulta es mediante el uso de la cláusula #[em WHERE] para filtrar condiciones en los datos. Sin embargo, cuando aun así los resultados son demasiados, es necesario paginarlos o presentarlos por partes. Para esto, se utiliza la cláusula #[em LIMIT]. 
+    p.mb-5(data-aos='fade-right') La principal forma de limitar resultados en una consulta es mediante el uso de la cláusula #[code WHERE] para filtrar condiciones en los datos. Sin embargo, cuando aun así los resultados son demasiados, es necesario paginarlos o presentarlos por partes. Para esto, se utiliza la cláusula #[code LIMIT]. 
     AcordionA.mb-5(tipo="a" clase-tarjeta="tarjeta tarjeta--morada")
       .row.justify-content-center(titulo="Filtrar y ordenar llamadas")
         .col-lg-5.mb-lg-0.mb-3
@@ -550,7 +550,7 @@
     .f-2-3.p-5.mn.mb-5
       #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
         h2 4.5 Agrupar filas
-      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[code SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[b #[em GROUP BY]]. Esta cláusula se emplea junto con funciones de agregación como#[b  AVG, SUM, MAX, COUNT], entre otras.
+      p.mb-5(data-aos='fade-right') Es posible agrupar filas en el resultado de una consulta #[code SELECT] basándose en los valores de una columna específica, utilizando la cláusula #[code GROUP BY]. Esta cláusula se emplea junto con funciones de agregación como #[code  AVG, SUM, MAX, COUNT], entre otras.
       .row.justify-content-center.mb-4
         .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
           .tarjeta.p-4(style="background-color:  #e3dfeb")

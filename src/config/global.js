@@ -243,22 +243,22 @@ export default {
     {
       termino: 'SQL',
       significado:
-        'Lenguaje de Consulta Estructurada (#[em Structured Query Language]), utilizado para gestionar y manipular bases de datos relacionales.',
+        'Lenguaje de Consulta Estructurada (<em>Structured Query Language</em>]), utilizado para gestionar y manipular bases de datos relacionales.',
     },
     {
       termino: 'SGBD',
       significado:
-        'Sistema de Gestión de Bases de Datos. #[em Software] que permite la creación, modificación y administración de una base de datos',
+        'Sistema de Gestión de Bases de Datos. <em>Software</em> que permite la creación, modificación y administración de una base de datos',
     },
     {
       termino: 'DDL',
       significado:
-        'Lenguaje de Definición de Datos (#[em Data Definition Language]). Subconjunto de comandos en SQL usados para definir la estructura de la base de datos. Incluye comandos como #[em CREATE y DROP.]',
+        'Lenguaje de Definición de Datos (<em>Data Definition Language</em>). Subconjunto de comandos en SQL usados para definir la estructura de la base de datos. Incluye comandos como <em>CREATE y DROP.</em>',
     },
     {
       termino: 'DML',
       significado:
-        'Lenguaje de Manipulación de Datos (#[em Data Manipulation Language]). Subconjunto de comandos en SQL usados para el manejo de datos, incluyendo #[em SELECT, INSERT, UPDATE y DELETE.]',
+        'Lenguaje de Manipulación de Datos (<em>Data Manipulation Language</em>). Subconjunto de comandos en SQL usados para el manejo de datos, incluyendo <em>SELECT, INSERT, UPDATE y DELETE.</em>',
     },
     {
       termino: 'Clave primaria',
@@ -288,7 +288,7 @@ export default {
     {
       termino: 'CRUD',
       significado:
-        'Acrónimo de Crear, Leer, Actualizar y Eliminar (#[em Create, Read, Update, Delete]). Representa las operaciones básicas en una base de datos.',
+        'Acrónimo de Crear, Leer, Actualizar y Eliminar (<em>Create, Read, Update, Delete</em>). Representa las operaciones básicas en una base de datos.',
     },
   ],
   referencias: [
@@ -405,7 +405,7 @@ export default {
       titulo: 'VALIDACIÓN RECURSO EDUCATIVO DIGITAL',
       autores: [
         {
-          nombre: 'Jaime Hernán Tejada Llano',
+          nombre: 'Luis Gabriel Urueta Alvarez',
           cargo: 'Validador de Recursos Educativos Digitales',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },

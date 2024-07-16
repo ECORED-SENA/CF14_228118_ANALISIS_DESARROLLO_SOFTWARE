@@ -29,7 +29,7 @@
     Separador
     #t_3_1.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 3.1 Inserción de registros 
-    p.mb-5(data-aos='fade-right') La forma más directa de añadir una fila nueva a una tabla es mediante una sentencia #[em INSERT]. En la versión más sencilla de esta sentencia, se debe indicar la tabla a la que se quieren agregar filas y los valores para cada columna. Las columnas de tipo cadena o fecha deben estar entre comillas sencillas o dobles, aunque esto no es necesario para las columnas numéricas, las cuales también pueden estar entrecomilladas. 
+    p.mb-5(data-aos='fade-right') La forma más directa de añadir una fila nueva a una tabla es mediante una sentencia #[code INSERT]. En la versión más sencilla de esta sentencia, se debe indicar la tabla a la que se quieren agregar filas y los valores para cada columna. Las columnas de tipo cadena o fecha deben estar entre comillas sencillas o dobles, aunque esto no es necesario para las columnas numéricas, las cuales también pueden estar entrecomilladas. 
     .row.justify-content-center.mb-5
       .col-lg-10.mb-lg-0.mb-3(data-aos="fade-right")
         .tarjeta-codigo.p-2

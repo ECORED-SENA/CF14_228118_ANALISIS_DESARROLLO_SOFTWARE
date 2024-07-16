@@ -572,7 +572,7 @@
 				.titulo-sexto.color-acento-contenido(data-aos='fade-right')
 					h5 Figura 1. 
 					span Claves foráneas
-				img(src='@/assets/curso/temas/16.png', alt='La imagen presenta  dos tablas de bases de datos, personas y telefonos.')
+				img(src='@/assets/curso/temas/16.png', alt='La imagen presenta dos tablas de bases de datos, personas y teléfonos.')
 		p.mb-5(data-aos='fade-right') Primero se crea la tabla #[code persona]: 
 
 		.row.justify-content-center.mb-5
@@ -712,7 +712,7 @@
 						h3.text-white.text-center.mb-0 ON UPDATE #[em &lt;opcion&gt;]
 					p.text-white Es semejante, define las acciones que deben de realizar en la tabla actual, cuando se modifique o actualice la columna de una fila en la tabla referenciada.
 
-		.f-1-7.p-5.pt-3.mn
+		.f-1-7.p-5.pb-0.pt-3.mn
 			p.fw-bold.mb-4 Hay cinco opciones distintas. A continuación, se explica lo que hace cada una de ellas: 
 			.row.justify-content-center.mb-4
 				.col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
@@ -768,9 +768,9 @@
 								br
 								|Query OK, 0 rows affected (0.19 sec) 
 
-		p(data-aos='fade-right') Si se intenta eliminar una fila de la tabla personas3 con un cierto valor en id_persona, se producirá un error si existen filas en la tabla telefonos3 en la columna persona_id con el mismo valor. La fila en personas3 no será eliminada a menos que se eliminen previamente las filas correspondientes en la tabla telefonos3 que comparten el mismo valor de clave foránea, debido a que se ha definido una restricción de tipo #[code DELETE RESTRICT.] 
+		p(data-aos='fade-right') Si se intenta eliminar una fila de la tabla #[code personas3] con un cierto valor en #[code id_persona], se producirá un error si existen filas en la tabla #[code telefonos3] en la columna #[code persona_id] con el mismo valor. La fila en #[code personas3] no será eliminada a menos que se eliminen previamente las filas correspondientes en la tabla #[code telefonos3] que comparten el mismo valor de clave foránea, debido a que se ha definido una restricción de tipo #[code DELETE RESTRICT.] 
 		
-		p.mb-0 Si se modifica el valor de la columna id_persona en la tabla personas3, también se deberán modificar los valores de la columna persona_id en la tabla telefonos3 para mantener la integridad referencial. 
+		p.mb-0 Si se modifica el valor de la columna #[code id_persona] en la tabla #[code personas3], también se deberán modificar los valores de la columna #[code persona_id] en la tabla #[code telefonos3] para mantener la integridad referencial. 
 
 
 		.f-1-8.p-5.pt-4.mn.mb-5
@@ -892,13 +892,13 @@
 					ul.lista-ul--color
 						li.d-flex.mb-5
 							i.fas.fa-circle.fa-xs(style="color: #8722E2 ")
-							p.mb-0 Si se intenta eliminar la fila correspondiente a #[code "Fulanito"], se producirá un error debido a que existen dos filas en la tabla #[code telefonos3] con el valor 1 en la columna #[code persona_id].
+							p.mb-0 Si se intenta eliminar la fila correspondiente a #[strong "Fulanito"], se producirá un error debido a que existen dos filas en la tabla #[code telefonos3] con el valor 1 en la columna #[code persona_id].
 						li.d-flex.mb-5
 							i.fas.fa-circle.fa-xs(style="color: #8722E2 ")
-							p.mb-0 Será posible eliminar la fila correspondiente a #[code "Menganito"], ya que no hay ninguna fila en la tabla #[code telefonos3] con el valor 2 en la columna #[code persona_id]. 
+							p.mb-0 Será posible eliminar la fila correspondiente a #[strong "Menganito"], ya que no hay ninguna fila en la tabla #[code telefonos3] con el valor 2 en la columna #[code persona_id]. 
 						li.d-flex
 							i.fas.fa-circle.fa-xs(style="color: #8722E2 ")
-							p.mb-0 Si cambiamos el valor de id_persona en la fila correspondiente a #[code "Tulanito"] por el valor 3, por ejemplo, este nuevo valor, 3, se asignará a la columna #[code persona_id] en las filas tercera y sexta de la tabla #[code telefonos3]. 
+							p.mb-0 Si cambiamos el valor de id_persona en la fila correspondiente a #[strong "Tulanito"] por el valor 3, por ejemplo, este nuevo valor, 3, se asignará a la columna #[code persona_id] en las filas tercera y sexta de la tabla #[code telefonos3]. 
 				.col-lg-5(data-aos="fade-left")
 					img(src='@/assets/curso/temas/18.png', alt='')
 		#t_2_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -1022,7 +1022,7 @@
 							h5.mb-3: span.titulo-azul.p-2 Ejercicios prácticos  
 							p(data-aos='fade-right').text-white Se propone revisar y estudiar dos ejercicios de repaso incluidos en el documento adjunto “Ejercicios Prácticos”. Estos ejercicios, completamente desarrollados y un poco más extensos, abarcan la temática vista hasta ahora, con la diferencia de que los problemas propuestos son más cercanos a situaciones de la vida real. 
 						.col.mb-3.mb-sm-0
-							a.boton.color-acento-botones(:href="obtenerLink('downloads/prueba.pdf')" target="_blank" type="application/pdf")
+							a.boton.color-acento-botones(:href="obtenerLink('downloads/EjerciciosPracticos.pdf')" target="_blank" type="application/pdf")
 								span Descargar 
 								i.fas.fa-file-download
 						
