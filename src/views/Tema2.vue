@@ -293,7 +293,7 @@
 								.col-auto: img(src='@/assets/curso/temas/7.svg', alt='', style="max-width: 100px")
 								.col
 									h5.mb-3: span.titulo-azul.p-2 ¡Nota! 
-									p(data-aos='fade-right') En la terminología SQL estándar, el término #[strong KEY] se utiliza generalmente en la definición de índices y #[strong PRIMARY KEY] para claves primarias específicas 
+									p(data-aos='fade-right') En la terminología SQL estándar, el término #[strong KEY] se utiliza generalmente en la definición de índices y #[strong PRIMARY KEY] para claves primarias específicas. 
 			p.mb-5(data-aos='fade-right') El uso de #[code NOT NULL PRIMARY KEY] equivale a #[code PRIMARY KEY] en cuanto a la restricción de valores nulos y la definición de la clave primaria. Es importante destacar que #[code PRIMARY KEY] implica automáticamente #[code NOT NULL]. Por lo tanto, #[code PRIMARY KEY, NOT NULL] o simplemente #[code KEY] pueden parecer equivalentes en términos generales, pero en la práctica, #[code KEY] se utiliza más comúnmente para definir índices que no necesariamente son claves primarias. 
 			.row.justify-content-center.mb-5
 				.col-lg-10
@@ -341,7 +341,7 @@
 								|Query OK, 0 rows affected (0.08 sec) 
 		.f-1-5.p-5.mn.mb-5
 			.titulo-tres.mb-4: h3.mb-0 F. Descripción de la tabla 
-			p.mb-5 SQL tiene una sentencia que permite revisar la descripción de una tabla; esta sentencia es #[code DESC &lt;nombre_tabla&gt;]
+			p.mb-5 SQL tiene una sentencia que permite revisar la descripción de una tabla; esta sentencia es #[code DESC &lt;nombre_tabla&gt;].
 
 			.row.justify-content-center.mb-5
 				.col-lg-10
@@ -400,7 +400,7 @@
 						h5.mb-0 [NOT NULL | NULL]:
 				.col-lg-4
 					.p-3.h-100(style="background-color: #dee4f0 ")
-						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) significa que es opcional; puede incluirse 
+						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) significa que es opcional; puede incluirse.
 			.row.justify-content-center.mb-5.g-0
 				.col-lg-2.mb-lg-0.mb-3
 					.p-3.h-100(style="background-color: #00ffdf ").d-flex.align-items-center
@@ -542,7 +542,7 @@
 		.f-1-5.p-5.mn.mb-5
 			.titulo-tres.mb-4: h3.mb-0 J. Claves únicas
 			p(data-aos='fade-right') El tercer tipo de índices se utiliza para crear claves únicas, ya sea sobre una columna o varias. Para definir índices con claves únicas, se debe usar la opción #[code UNIQUE]. 
-			p.mb-4 La diferencia entre un índice único y un índice normal es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor #[code NULL], que sí puede repetirse varias veces. 
+			//p.mb-4 La diferencia entre un índice único y un índice normal es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor #[code NULL], que sí puede repetirse varias veces. 
 			
 			.tarjeta-codigo.p-2.mb-4
 				pre.language-html(language="html").mt-5
@@ -559,7 +559,7 @@
 
 			.row.justify-content-center.align-items-center.mb-5
 				.col
-					p La diferencia entre un índice único y un índice normal radica en que los índices únicos no permiten la inclusión de filas con datos duplicados en la columna o columnas de la tabla. Sin embargo, es importante tener en cuenta una excepción: el valor NULL, que sí se puede repetir varias veces en un índice único. 
+					p La diferencia entre un índice único y un índice normal radica en que los índices únicos no permiten la inclusión de filas con datos duplicados en la columna o columnas de la tabla. Sin embargo, es importante tener en cuenta una excepción: el valor #[code NULL], que sí se puede repetir varias veces en un índice único. 
 					img(src='@/assets/curso/temas/13.svg', alt='' style="width: 85px")
 				.col-auto: img(src='@/assets/curso/temas/16.svg', alt='')
 		Separador
@@ -691,7 +691,7 @@
 							br
 							|) ENGINE=InnoDB;
 
-		p.mb-5(data-aos='fade-right') Es necesario que la columna que tiene una definición de clave foránea esté indexada mediante #[em KEY](numero). Sin embargo, esto no debe generar preocupación, ya que si no se especifica explícitamente, MySQL realizará la indexación de manera implícita.
+		p.mb-5(data-aos='fade-right') Es necesario que la columna que tiene una definición de clave foránea esté indexada mediante #[code KEY(numero)]. Sin embargo, esto no debe generar preocupación, ya que si no se especifica explícitamente, MySQL realizará la indexación de manera implícita.
 
 		.row.justify-content-center.mb-4
 			.col-lg-10

@@ -154,7 +154,7 @@
               |[em [LIMIT row_count]
 
     .tarjeta.p-4.mb-3(style="background-color: #e3dfeb ")
-      p.mb-0 Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia #[code UPDATE] 
+      p.mb-0 Que todas las personas de la tabla gente tengan la misma fecha utilizando esta sentencia #[code UPDATE].
 
     .row.justify-content-center.mb-5
       .col-lg-10.mb-lg-0.mb-3(data-aos="fade-right")
