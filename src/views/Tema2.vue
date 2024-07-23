@@ -400,7 +400,7 @@
 						h5.mb-0 [NOT NULL | NULL]:
 				.col-lg-4
 					.p-3.h-100(style="background-color: #dee4f0 ")
-						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) significa que es opcional; puede incluirse.
+						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) signinca que es opcional; puede incluirse o no. Dentro de las opciones, lo que está separado por el carácter "pipe" (|) significa que debe escogerse una de las opciones separadas por el "pipe".
 			.row.justify-content-center.mb-5.g-0
 				.col-lg-2.mb-lg-0.mb-3
 					.p-3.h-100(style="background-color: #00ffdf ").d-flex.align-items-center
@@ -541,7 +541,7 @@
 								|Query OK, 0 rows affected (0.16 sec) 
 		.f-1-5.p-5.mn.mb-5
 			.titulo-tres.mb-4: h3.mb-0 J. Claves únicas
-			p(data-aos='fade-right') El tercer tipo de índices se utiliza para crear claves únicas, ya sea sobre una columna o varias. Para definir índices con claves únicas, se debe usar la opción #[code UNIQUE]. 
+			p(data-aos='fade-right').mb-4 El tercer tipo de índices se utiliza para crear claves únicas, ya sea sobre una columna o varias. Para definir índices con claves únicas, se debe usar la opción #[code UNIQUE]. 
 			//p.mb-4 La diferencia entre un índice único y un índice normal es que en los índices únicos no se admite la inclusión de filas con datos repetidos en la columna o columnas de la tabla. Una excepción es el valor #[code NULL], que sí puede repetirse varias veces. 
 			
 			.tarjeta-codigo.p-2.mb-4
