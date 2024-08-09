@@ -79,7 +79,7 @@ export default {
       {
         nombreRuta: 'tema3',
         numero: '3',
-        titulo: 'SQL para la creación y eliminación de bases de datos - DDL ',
+        titulo: 'Gestión de datos en bases de datos',
         desarrolloContenidos: true,
         subMenu: [
           {
@@ -248,7 +248,7 @@ export default {
     {
       termino: 'SGBD',
       significado:
-        'Sistema de Gestión de Bases de Datos. <em>Software</em> que permite la creación, modificación y administración de una base de datos',
+        'Sistema de Gestión de Bases de Datos. <em>Software</em> que permite la creación, modificación y administración de una base de datos.',
     },
     {
       termino: 'DDL',
@@ -387,11 +387,6 @@ export default {
         {
           nombre: 'Edgar Mauricio Cortes Garcia',
           cargo: 'Desarrollador Fullstack',
-          centro: 'Centro de Servicios de Salud - Regional Antioquia',
-        },
-        {
-          nombre: 'Daniela Muñoz Bedoya',
-          cargo: 'Animador y Producción audiovisual',
           centro: 'Centro de Servicios de Salud - Regional Antioquia',
         },
         {

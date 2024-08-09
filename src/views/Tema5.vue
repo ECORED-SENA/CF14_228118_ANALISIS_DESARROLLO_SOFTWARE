@@ -7,12 +7,12 @@
         span 5
       h1 Consulta multitablas – DML
     p(data-aos='fade-right') Para explicar este tipo de ejercicios, crearemos una base de datos de empleados llamada #[strong ‘ehr’]. En esta base de datos, las tablas #[code ‘empleados’] y #[code ‘áreas’] están relacionadas de la siguiente manera: un empleado pertenece a un área y un área puede tener varios empleados, como se presenta en el siguiente diagrama: 
-    p.mb-5 Note que #[code area_id] en la tabla empleados puede ser nuleable: 
+    p.mb-5 Note que #[code area_id] en la tabla empleados puede ser #[i nullable]: 
     .row.justify-content-center.mb-5
       .col-lg-8(data-aos="zoom-in")
         .tarjeta-codigo.p-2.mb-5
           pre.language-html(language="html").mt-5
-            code ariaDB [ehr]&gt; CREATE TABLE IF NOT EXISTS areas ( 
+            code MariaDB [ehr]&gt; CREATE TABLE IF NOT EXISTS areas ( 
               br
               |    -&gt; id_area TINYINT NOT NULL, 
               br
@@ -195,7 +195,7 @@
     p.mb-5(data-aos='fade-right') Esta variedad de combinación de tablas permite seleccionar algunas filas de una tabla aunque no exista correspondencia con las filas de la otra tabla con la que se combina. Este método facilita la inclusión de datos que no cumplen con la condición de coincidencia especificada en la cláusula JOIN. 
     .f-2-2.p-5.mn.mb-5
       .titulo-tres.mb-4: h3.mb-0 LEFT JOIN 
-      p.mb-5(data-aos='fade-right') La sintaxis es muy similar a la anterior
+      p.mb-5(data-aos='fade-right') La sintaxis es muy similar a la anterior.
       .row.justify-content-center.mb-0
         .col-lg-8.mb-lg-0.mb-3(data-aos="fade-right")
           .tarjeta-codigo.p-2.mb-5

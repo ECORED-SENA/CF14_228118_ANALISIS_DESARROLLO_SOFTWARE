@@ -223,7 +223,6 @@
 			.row.justify-content-center.mb-4
 				.col-lg-12.mb-lg-0.mb-3(data-aos="fade-right")
 					p En una columna, se puede especificar opcionalmente un valor por defecto. Este valor por defecto se asignará automáticamente a la columna cuando no se especifique un valor concreto al añadir un registro. Si una columna permite valores nulos y no se especifica un valor al insertar, el valor por defecto será #[code NULL]. Por ejemplo, en el caso mencionado anteriormente, el valor por defecto para la columna #[code poblacion] es #[code NULL.]
-
 			.row.justify-content-center
 				.col-lg-10(data-aos="fade-left")  
 					.tarjeta.p-4.mb-3(style="background-color: #e3dfeb")
@@ -268,7 +267,7 @@
 			.titulo-tres.mb-4: h3.mb-0 C. Claves primarias
 			.row.justify-content-center.mb-4
 				.col-lg-12.mb-lg-0.mb-3(data-aos="fade-right")
-					p Es posible definir una clave primaria para una columna utilizando la palabra clave #[code PRIMARY KEY]]. Cada tabla puede tener solo una clave primaria, y la columna designada como tal no puede contener valores #[code NULL], como se mencionó anteriormente. Si esto no se especifica explícitamente, MySQL lo gestionará automáticamente. 
+					p Es posible definir una clave primaria para una columna utilizando la palabra clave #[code [PRIMARY KEY]]. Cada tabla puede tener solo una clave primaria, y la columna designada como tal no puede contener valores #[code NULL], como se mencionó anteriormente. Si esto no se especifica explícitamente, MySQL lo gestionará automáticamente. 
 					//img(src='@/assets/curso/temas/13.svg', alt='' style="width: 85px")
 			.row.justify-content-center
 				.col-lg-10(data-aos="fade-left")  
@@ -400,14 +399,14 @@
 						h5.mb-0 [NOT NULL | NULL]:
 				.col-lg-4
 					.p-3.h-100(style="background-color: #dee4f0 ")
-						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) signinca que es opcional; puede incluirse o no. Dentro de las opciones, lo que está separado por el carácter "pipe" (|) significa que debe escogerse una de las opciones separadas por el "pipe".
+						p.mb-0 Todo lo que se encuentre encerrado entre corchetes ([ ]) significa que es opcional; puede incluirse o no. Dentro de las opciones, lo que está separado por el carácter "pipe" (|) significa que debe escogerse una de las opciones separadas por el "pipe".
 			.row.justify-content-center.mb-5.g-0
 				.col-lg-2.mb-lg-0.mb-3
 					.p-3.h-100(style="background-color: #00ffdf ").d-flex.align-items-center
 						h5.mb-0 DATE NOT NULL:
 				.col-lg-4
 					.p-3.h-100(style="background-color: #dee4f0 ")
-						p.mb-0 Si se quiere definir un campo que se llame fecha de tipo #[code DATE] y que no sea nulable.
+						p.mb-0 Si se quiere definir un campo que se llame fecha de tipo #[code DATE] y que no sea #[i nullable].
 
 			p.mb-5(data-aos='fade-right') Si quiere que el valor por defecto de esta columna sea la fecha actual del sistema puedo usar la sintaxis #[code DEFAULT CURRENT_DATE] así: 
 			.row.justify-content-center.mb-5
@@ -1014,12 +1013,14 @@
 
 		.tarjeta.color-primario.p-5.mb-5
 			.row.justify-content-around.align-items-center
-				.col-3.col-sm-2.col-lg-1
+				.col-3.col-sm-2.col-lg-1.d-none.d-lg-block
 					img(src="@/assets/curso/temas/19.svg")
 				.col
 					.row.justify-content-between.align-items-center
-						.col-10.mb-3.mb-sm-0
-							h5.mb-3: span.titulo-azul.p-2 Ejercicios prácticos  
+						.col-12.mb-3.mb-sm-0
+							.row 
+								.col-auto
+									h5.mb-3.titulo-azul.p-2 Ejercicios prácticos  
 							p(data-aos='fade-right').text-white Se propone revisar y estudiar dos ejercicios de repaso incluidos en el documento adjunto “Ejercicios Prácticos”. Estos ejercicios, completamente desarrollados y un poco más extensos, abarcan la temática vista hasta ahora, con la diferencia de que los problemas propuestos son más cercanos a situaciones de la vida real. 
 						.col.mb-3.mb-sm-0
 							a.boton.color-acento-botones(:href="obtenerLink('downloads/EjerciciosPracticos.pdf')" target="_blank" type="application/pdf")

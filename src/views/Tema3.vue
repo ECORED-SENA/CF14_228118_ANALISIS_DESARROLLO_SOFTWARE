@@ -5,7 +5,7 @@
     .titulo-principal.color-acento-contenido
       .titulo-principal__numero
         span 3
-      h1 SQL para la creación y eliminación de bases de datos – DDL  
+      h1 Gestión de datos en bases de datos   
     .row.justify-content-center
       .col-lg-7.mb-lg-0.mb-3(data-aos="fade-right")
         .p-4(style="background-color: #f3f9ff").mb-4
@@ -132,7 +132,7 @@
               |MariaDB [prueba]&gt;
     p.mb-5(data-aos='fade-right') El orden en la sentencia #[em INSERT] es muy importante, conserve una correspondencia como se presenta en la siguiente imagen. 
     .row.justify-content-center.mb-5
-      .col-auto: img(src='@/assets/curso/temas/21.png', alt='')
+      .col-auto: img(src='@/assets/curso/temas/21.png', alt='La imagen muestra una instrucción SQL para insertar datos en una tabla llamada "gente." La instrucción es: INSERT INTO gente (nombre, fecha, edad) VALUES (Fulano, 1974-04-12, 18).')
     p(data-aos='fade-right') Finalmente, estamos listos para aprender cómo se actualizan los datos que se han registrado. 
     Separador
     #t_3_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -278,7 +278,7 @@
 
 
     .tarjeta.p-4.mb-3(style="background-color: #e3dfeb ")
-      p.mb-0 Otro ejemplo sería que se actualice la fecha al día 2012-12-12, para todos lo que sean mayores de 40 años, esto se podría hacer así: 
+      p.mb-0 Otro ejemplo sería que se actualice la fecha al día 2012-12-12, para todos los que sean mayores de 40 años, esto se podría hacer así: 
 
     .row.justify-content-center.mb-5
       .col-lg-10(data-aos="fade-left")
@@ -408,7 +408,7 @@
               |MariaDB [prueba]&gt; 
       .col-lg-6.col-7(data-aos="fade-left"): img(src='@/assets/curso/temas/23.svg', alt='')
     .titulo-tres.mb-4: h3.mb-0 Vaciar una tabla 
-    p.mb-5(data-aos='fade-right') Cuando se desea borrar todas las filas de una tabla, es posible utilizar la sentencia #[code DELETE] sin especificar condiciones, como se mencionó anteriormente. Sin embargo, existe una alternativa más rápida: la sentencia #[code TRUNCATE]. A diferencia del #[code DELETE], que elimina las filas de manera secuencial, #[code TRUNCATE] remueve todos los datos borrando y recreando la tabla vacía, lo cual resulta mucho más eficiente 
+    p.mb-5(data-aos='fade-right') Cuando se desea borrar todas las filas de una tabla, es posible utilizar la sentencia #[code DELETE] sin especificar condiciones, como se mencionó anteriormente. Sin embargo, existe una alternativa más rápida: la sentencia #[code TRUNCATE]. A diferencia del #[code DELETE], que elimina las filas de manera secuencial, #[code TRUNCATE] remueve todos los datos borrando y recreando la tabla vacía, lo cual resulta mucho más eficiente. 
     .row.justify-content-center.mb-5
       .col-lg-6(data-aos="zoom-in")
         .tarjeta-codigo.p-2.mb-5

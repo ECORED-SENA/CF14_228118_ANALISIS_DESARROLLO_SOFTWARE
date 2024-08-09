@@ -25,15 +25,15 @@
             .row(titulo="Paso 1")
               .col-lg-6.mb-4.mb-lg-0
                 p Debe abrir inicio y buscar MySQL o teclear “mysql” y se hace Clic en MySQL Command Line Client. 
-              .col-lg-6: img(src='@/assets/curso/temas/4.png', alt='')
+              .col-lg-6: img.img-a.img-t(src='@/assets/curso/temas/4.jpg', alt='')
             .row(titulo="Paso 2")
               .col-lg-6.mb-4.mb-lg-0
                 p Ingresa la contraseña de root usada en el proceso de instalación de MySQL. 
-              .col-lg-6: img(src='@/assets/curso/temas/5.png', alt='')
+              .col-lg-6: img(src='@/assets/curso/temas/5.svg', alt='')
             .row(titulo="Paso 3")
               .col-lg-6.mb-4.mb-lg-0
-                p Una vez autenticado en la interface comando de línea se aprecia este resultado. 
-              .col-lg-6: img(src='@/assets/curso/temas/6.png', alt='')
+                p Una vez autenticado en la interfaz comando de línea se aprecia este resultado. 
+              .col-lg-6: img(src='@/assets/curso/temas/6_1.svg', alt='')
             .row(titulo="Paso 4")
               .col-lg-12.mb-4.mb-lg-0
                 p En adelante los resultados de la interfaz de línea de comandos se presentarán como sigue: 

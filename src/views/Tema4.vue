@@ -59,7 +59,7 @@
 
               tr
                 td MONTH
-                td Devuelve la parte del mes para una fecha determinada
+                td Devuelve la parte del mes para una fecha determinada.
 
               tr
                 td DAY
@@ -131,17 +131,17 @@
                   td Registro
                   td DATETIME            
                   td 0            
-                  td Fecha y hora de registro de la llamada            
+                  td Fecha y hora de registro de la llamada.            
                 tr
                   td Origen
                   td VARCHAR            
                   td 80            
-                  td Número de teléfono o extensión del llamante            
+                  td Número de teléfono o extensión del llamante.            
                 tr
                   td Destino
                   td VARCHAR            
                   td 80            
-                  td Número de teléfono o extensión del llamado o destino            
+                  td Número de teléfono o extensión del llamado o destino.            
                 tr
                   td Estado
                   td VARCHAR            
@@ -151,12 +151,12 @@
                   td Duración
                   td INT            
                   td 10            
-                  td Lo que dura la llamada incluyendo el tiempo de timbrado           
+                  td Lo que dura la llamada incluyendo el tiempo de timbrado.           
                 tr
                   td Facturas
                   td INT            
                   td 10           
-                  td Lo que dura la llamada desde el momento en que es contestada la llamada
+                  td Lo que dura la llamada desde el momento en que es contestada la llamada.
 
     p.mb-5(data-aos='fade-right') A partir de este punto usaremos #[b MySQL WorkBench], para visualizar mejor los resultados.
 
@@ -214,28 +214,28 @@
               p Para listar todos los elementos de la tabla #[code cdr], se utiliza el comodín *, que indica que se deben seleccionar todas las columnas. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white  SELECT * FROM cdr 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/30.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/30.png', alt='La imagen presenta una interfaz de consulta SQL con dos flechas rojas señalando el botón de ejecución y el texto de la consulta.')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Selección de columnas específicas 
               p Para seleccionar solo algunas columnas específicas de la tabla cdr, se enumeran las columnas deseadas, separadas por comas. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT origen, destino, duracion FROM cdr 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/31.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/31.png', alt='La imagen presenta la aplicación de la sentencia SELECT origen, destino, duración, FROM.')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2") Uso de alias en columnas 
               p Asignar un alias a las columnas en las consultas SQL usando la palabra clave #[code AS], que es opcional. Aquí, a la columna origen se le asigna el alias #[code num_orig] y a duracion el alias #[code tiempo_llamada]. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT origen AS num_orig, destino, duracion AS tiempo_llamada FROM cdr  
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/32.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/32.png', alt='La imagen presenta la aplicación del alias AS a la expresión de SELECT.')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Cálculo de cobro por llamadas 
               p Para calcular el cobro de llamadas salientes a números de celular o a larga distancia nacional con 10 dígitos en el destino, primero se filtran estas llamadas. Se usa la función #[code LENGTH] para identificar las que tienen 10 dígitos. Luego, se calcula el número de minutos dividiendo los segundos de la duración por 60 y redondeando hacia arriba con la función #[code CEIL]. El valor final se obtiene multiplicando el número de minutos redondeado por el costo por minuto, que es $85. 
               .tarjeta.p-4(style="background-color: #130725")
                 code.text-white SELECT *, facturar/60 AS minutos, CEIL(facturar/60) AS minutos_redondeado, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/33.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/33.png', alt='La imagen presenta la aplicación de la función LENGTH en el ejemplo sobre el valor a cobrar por las llamadas salientes.')
     Separador
     .f-2-2.p-5.mn
       #t_4_2.titulo-segundo.color-acento-contenido(data-aos='fade-right')
@@ -343,7 +343,7 @@
       .col-lg-3
         .p-4(style="background-color: #debefb")
           h4 Operador OR
-          p.mb-0 SQL este operador también tiene dos formas equivalentes #[code OR]. El operador #[code OR] también es binario. Si ambos operandos siendo diferentes de #[code NULL], el resultado es verdadero si alguno de ellos es verdadero y, es falso si los dos son falsos. Si uno de los operandos es #[code NULL] el resultado será verdadero si el otro operando es verdadero, y será #[code NULL] si el otro operando es falso
+          p.mb-0 SQL este operador también tiene dos formas equivalentes #[code OR]. El operador #[code OR] también es binario. Si ambos operandos siendo diferentes de #[code NULL], el resultado es verdadero si alguno de ellos es verdadero y, es falso si los dos son falsos. Si uno de los operandos es #[code NULL] el resultado será verdadero si el otro operando es verdadero, y será #[code NULL] si el otro operando es falso.
       .col-lg-7
         .p-4(style="background-color: #f7eefe ")
           p La tabla de verdad es:
@@ -464,17 +464,17 @@
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Orden ascendente por fecha  
               p Ejemplo para ordenar de manera ascendente por la fecha: #[code SELECT * FROM cdr ORDER BY registro ASC]. 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/36.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/36.png', alt='La imagen presenta la aplicación de la cláusula de orden ORDER BY.')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Ordenar por resultado de operación
               p Ejemplo para ordenar llamadas de larga distancia o celular a 85 pesos el minuto, por el costo mayor al menor: #[code SELECT *, CEIL(facturar/60) * 85 AS valor FROM cdr WHERE LENGTH(destino) = 10 ORDER BY CEIL(facturar/60) * 85 DESC]. 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/37.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/37.png', alt='La imagen presenta la aplicación de la cláusula de orden ORDER BY de manera ascendente por la fecha.')
           .row.justify-content-center.align-items-center
             .col-lg-4.mb-4.mb-lg-0
               h4(style="color: #8722E2 ") Agrupar por múltiples criterios   
               p Se puede agrupar por varios criterios a la vez, por ejemplo, ordenar los resultados por la duración y si hay repetidos, que el siguiente criterio sea la fecha de registro: #[code SELECT * FROM cdr ORDER BY facturar DESC, registro ASC]. 
-            .col-lg-6.col-7: img(src='@/assets/curso/temas/38.png', alt='')
+            .col-lg-6.col-7: img(src='@/assets/curso/temas/38.png', alt='La imagen presenta la aplicación de la cláusula de orden ORDER BY por el resultado de operación.')
     Separador
     #t_4_4.titulo-segundo.color-acento-contenido(data-aos='fade-right')
       h2 4.4 Listar y limitar resultados. 
@@ -492,7 +492,7 @@
                 |WHERE YEAR(registro) = 2016 AND LENGTH(destino) = 10 AND CEIL(facturar/60) *                
                 br
                 |85 > 200 ORDER BY valor DES
-        .col-lg-7.col-6: img(src='@/assets/curso/temas/39.png', alt='')
+        .col-lg-7.col-6: img(src='@/assets/curso/temas/39.png', alt='La imagen presenta la aplicación de las cláusulas WHERE y LIMIT para limitar resultados, de acuerdo al ejemplo dado.')
       .row.justify-content-center(titulo="Contar resultados")
         .col-lg-5.mb-lg-0.mb-3
           p Para contar los resultados que cumplen con ciertas condiciones sin ordenar:
@@ -507,7 +507,7 @@
                 |AND LENGTH(destino) = 10 
                 br
                 |AND CEIL(facturar/60) * 85 > 200
-        .col-lg-7.col-6: img(src='@/assets/curso/temas/40.png', alt='')
+        .col-lg-7.col-6: img(src='@/assets/curso/temas/40.png', alt='La imagen presenta la aplicación para contar los resultados con la función COUNT.')
       .row.justify-content-center(titulo="Limitar resultados")
         .col-lg-5.mb-lg-0.mb-3
           p Para mostrar solo un número limitado de resultados, utiliza LIMIT. Por ejemplo, para ver los primeros 10:
@@ -526,10 +526,10 @@
                 |ORDER BY valor DESC 
                 br
                 |LIMIT 10
-        .col-lg-7.col-6: img(src='@/assets/curso/temas/41.png', alt='')
+        .col-lg-7.col-6: img(src='@/assets/curso/temas/41.png', alt='La imagen presenta la aplicación de la cláusula LIMIT.')
       .row.justify-content-center(titulo="Paginación de resultados")
         .col-lg-5.mb-lg-0.mb-3
-          p Para rescatar filas de manera paginada, por ejemplo, las siguientes 10 después de las primeras 10
+          p Para rescatar filas de manera paginada, por ejemplo, las siguientes 10 después de las primeras 10.
           .tarjeta-codigo.p-2.mb-5
             pre.language-html(language="html").mt-5
               code SELECT *, CEIL(facturar/60) * 85 AS valor 
@@ -545,7 +545,7 @@
                 |ORDER BY valor DESC 
                 br
                 |LIMIT 10, 10
-        .col-lg-7.col-6: img(src='@/assets/curso/temas/42.png', alt='')
+        .col-lg-7.col-6: img(src='@/assets/curso/temas/42.png', alt='La imagen presenta la aplicación de los próximos 10 datos.')
     Separador
     .f-2-3.p-5.mn.mb-5
       #t_4_5.titulo-segundo.color-acento-contenido(data-aos='fade-right')
