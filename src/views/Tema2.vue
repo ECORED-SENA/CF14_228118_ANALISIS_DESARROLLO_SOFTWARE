@@ -702,13 +702,13 @@
 			.col-lg-4.mb-lg-0.mb-3(data-aos="fade-right")
 				.tarjeta.p-4.h-100(style="background-color: #8722e2")
 					.tarjeta.d-flex.m-auto.p-4(style="background-color: #3a1d71 ").mb-4.justify-content-center
-						h3.text-white.text-center.mb-0 ON DELETE #[em &lt;opcion&gt;]
+						h3.text-white.text-center.mb-0 ON DELETE #[em &lt;option&gt;]
 					p.text-white Define las acciones que deben de realizar en la tabla actual, cuando se elimine una fila en la tabla referenciada.
 
 			.col-lg-4.mb-lg-0.mb-3(data-aos="fade-right")
 				.tarjeta.p-4.h-100(style="background-color: #3a1d71")
 					.tarjeta.d-flex.m-auto.p-4(style="background-color: #8722e2  ").mb-4.justify-content-center
-						h3.text-white.text-center.mb-0 ON UPDATE #[em &lt;opcion&gt;]
+						h3.text-white.text-center.mb-0 ON UPDATE #[em &lt;option&gt;]
 					p.text-white Es semejante, define las acciones que deben de realizar en la tabla actual, cuando se modifique o actualice la columna de una fila en la tabla referenciada.
 
 		.f-1-7.p-5.pb-0.pt-3.mn
